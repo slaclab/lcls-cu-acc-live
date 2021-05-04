@@ -125,6 +125,6 @@ class AccModel:
         return self.output_variables.values()
 
 if __name__ == "__main__":
-  #  from lume_model.utils import save_variables
+    from lume_model.utils import save_variables
     model = AccModel()
-  #  save_variables(model.input_variables, model.output_variables, "model_variables.pickle")
+    save_variables(model.input_variables, model.output_variables, "model_variables.pickle")

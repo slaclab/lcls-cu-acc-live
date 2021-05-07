@@ -54,7 +54,7 @@ class Bridge:
         mapping = self._mapping[pvname]
         model_pv = mapping['model_pv']
         thread = threading.Thread(target=self._dispatch,
-                                  args=(model_pv, value), daemon=True)
+                                  args=(model_pv, value))
         thread.start()
 
     def _dispatch(self, model_pv, model_value):
@@ -115,8 +115,6 @@ def launch(*, variable_filename, model_pv_prefix, log_level):
         logger.info('Finishing Bridge...')
         pass
     logger.info('Done!')
-
-
 
 
 def get_parser():

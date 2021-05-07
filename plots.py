@@ -67,8 +67,8 @@ twiss.yaxis.axis_label = 'Twiss Beta (m)'
 a_beta_cds = ColumnDataSource(data = data) # only want one hover tool
 b_beta_cds = ColumnDataSource(data = data)
 
-plota = twiss.line(x="x", y="y", source=a_beta_cds, line_width=1, name = r'$\beta_a$', legend_label="beta_a", line_color="red")
-twiss.line(x="x", y="y", source=b_beta_cds, line_width=1, name = r'$\beta_b$', legend_label="beta_b")
+plota = twiss.line(x="x", y="y", source=a_beta_cds, line_width=1, name = r'$\beta_a$', legend_label="βx", line_color="red")
+twiss.line(x="x", y="y", source=b_beta_cds, line_width=1, name = r'$\beta_b$', legend_label="βy")
 twiss.legend.location = "top_left"
 twiss.legend.label_text_font_size = '8pt'
 
@@ -93,8 +93,8 @@ eta_etap.yaxis.axis_label = 'Dispersion (m)'
 eta_cds = ColumnDataSource(data = data)
 etap_cds = ColumnDataSource(data = data)
 
-eta_etap_line = eta_etap.line(x="x", y="y", source=eta_cds, line_width=1, name = r'$\a_eta$', legend_label="a_eta", line_color="black")
-eta_etap.line(x="x", y="y", source=etap_cds, line_width=1, name = r'$\b_etap$', legend_label="b_etap", line_color="green")
+eta_etap_line = eta_etap.line(x="x", y="y", source=eta_cds, line_width=1, name = r'$\a_eta$', legend_label="ηx", line_color="black")
+eta_etap.line(x="x", y="y", source=etap_cds, line_width=1, name = r'$\b_etap$', legend_label="ηy", line_color="green")
 eta_etap.legend.label_text_font_size = '8pt'
 eta_etap.legend.location = "bottom_left"
 

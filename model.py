@@ -40,36 +40,36 @@ def get_tao(ALL_DATAMAPS, pvdata):
     return lines
 
 class AccModel:
-    def __init__(self):
+    def __init__(self, pv_defaults="data/PVDATA-2021-04-21T08:10:25.000000-07:00.json"):
         # Basic model with options
         INIT = f'-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 
         self.tao = Tao(INIT)
 
-        # filter klystrons
-        klystron_names = self.tao.lat_list('overlay::K*', 'ele.name', flags='-no_slaves')
-        self.dms = get_datamaps(["klystron", "quad", "linac", "tao_energy_measurements", "subboosters", "beginning_OTR2"], klystron_names=klystron_names)
+        self.dms = get_datamaps("cu_hxr")
 
-        with files('lcls_live.data.pvs').joinpath('PVDATA-2021-04-21T08:10:25.000000-07:00.json') as data_path:
-            with open(data_path) as data_file:
+        if pv_defaults:
+            with open(pv_defaults) as data_file:
                 pvdata = json.load(data_file)  
 
-        cmds = get_tao(self.dms, pvdata)
-        output = self.run_tao(cmds)
 
         #build input variables
         self.input_variables = {}
         for dm in self.dms:
             for pv in dm.pvlist:
-                if isinstance(pvdata[pv], (float, int, type(None))):
-                    self.input_variables[pv] = ScalarInputVariable(name=pv, range=[-np.inf, np.inf], default=pvdata[pv])
+                value = pvdata.get(pv)
+                if value is None:
+                    value = 0
 
-                elif isinstance(pvdata[pv], (list)):
-                    self.input_variables[pv] = ArrayInputVariable(name=pv, default=np.array(pvdata[pv]))
+                if isinstance(value, (float, int, type(None))):
+                    self.input_variables[pv] = ScalarInputVariable(name=pv, range=[-np.inf, np.inf], default=value)
 
-                else: 
-                    print(f"NOT FOUND {pv}, {pvdata[pv]}")
+                elif isinstance(value, (list)):
+                    self.input_variables[pv] = ArrayInputVariable(name=pv, default=np.array(value))
 
+
+        cmds = get_tao(self.dms, pvdata)
+        output = self.init_tao(cmds)
 
         self.output_variables = {}
         for key in TAO_OUTKEYS:
@@ -79,11 +79,9 @@ class AccModel:
             else:
                 self.output_variables[key] = ArrayOutputVariable(name=key)
 
-
-    def run_tao(self, cmds):
+    def init_tao(self, cmds):
+        
         init_cmds = """
-        place floor energy
-        !set global plot_on = F
         set global lattice_calc_on = F
         set lattice model=design ! Reset the lattice
         set ele quad::* field_master = T
@@ -95,7 +93,41 @@ class AccModel:
         """.split('\n')
 
         for cmd in init_cmds:
+            self.tao.cmd(cmd)    
+
+        for cmd in cmds:
             self.tao.cmd(cmd)
+
+        for cmd in final_cmds:
+            self.tao.cmd(cmd)
+
+        output = {k:self.tao.lat_list('*', k) for k in TAO_OUTKEYS}
+
+        n = len(output["ele.name"])
+
+        output["ele.mat6"] = output["ele.mat6"].reshape(len(output["ele.mat6"])//36, 6, 6)
+        output["ele.vec0"] = output["ele.vec0"].reshape(len(output["ele.vec0"])//6, 6)
+
+        return output
+
+
+
+    def run_tao(self, cmds):
+        init_cmds = """
+        set global lattice_calc_on = F
+        set lattice model=design ! Reset the lattice
+        !set ele quad::* field_master = T
+        """.split('\n')
+
+        final_cmds = """
+        set global lattice_calc_on = T
+        !set global plot_on = T
+        !sc
+        """.split('\n')
+
+        for cmd in init_cmds:
+            self.tao.cmd(cmd)
+            
 
         for cmd in cmds:
             self.tao.cmd(cmd)
@@ -127,4 +159,5 @@ class AccModel:
 if __name__ == "__main__":
     from lume_model.utils import save_variables
     model = AccModel()
-    save_variables(model.input_variables, model.output_variables, "model_variables.pickle")
+    
+    save_variables(model.input_variables, model.output_variables, "files/model_variables.pickle")

@@ -12,6 +12,14 @@ INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 
 tao = Tao(INIT)
 
+init_cmds = """
+set lattice model=design ! Reset the lattice
+set ele quad::* field_master = T
+""".split('\n')
+
+for cmd in init_cmds:
+    tao.cmd(cmd)
+
 dms = get_datamaps("cu_hxr")
 
 with open(pv_defaults) as data_file:
@@ -72,5 +80,5 @@ for i in range(len(dms)):
     print(f"n commands: {len(cmds)}")
     print(f"time: {time_calc}")
 
-plt.plot(time, cmd_n)
+plt.plot(times, cmd_n)
 plt.show()

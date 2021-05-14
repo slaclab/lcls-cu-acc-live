@@ -2,6 +2,7 @@ import argparse
 import collections
 import logging
 import sys
+import os
 import threading
 from lume_model.utils import load_variables
 import epics
@@ -164,12 +165,11 @@ def main():
     """
     Wrapper method to invoke the argument parser and launch the bridge
     """
+    os.environ["EPICS_CA_NAME_SERVERS"]=f"localhost:{os.environ['CA_NAME_SERVER_PORT']}"
     args = parse_arguments()
     kwargs = vars(args)
     launch(**kwargs)
 
 
 if __name__ == "__main__":
-    import os
-    os.environ["EPICS_CA_NAME_SERVERS"]=f"localhost:{os.environ['CA_NAME_SERVER_PORT']}"
     main()

@@ -172,6 +172,7 @@ def update_plots():
         #twiss
         ele_a_beta = output["ele.a.beta"]
         ele_b_beta = output["ele.b.beta"]
+
         a_beta_cds.data = {"x": ele_s, "y": ele_a_beta, "name": ele_name}
         b_beta_cds.data = {"x": ele_s, "y": ele_b_beta, "name": ele_name}
 
@@ -188,8 +189,8 @@ def update_plots():
 
 
 
-
-value_table = ValueTable(input_variables.values(), controller)
+table_variables = [input_var for input_var in input_variables.values() if input_var.variable_type == "scalar"]
+value_table = ValueTable(table_variables, controller)
 
 curdoc().add_root(column(title_div, row(column(twiss, e_total, eta_etap), value_table.table), sizing_mode="scale_width"))
 #curdoc().add_root(column(value_table.table))

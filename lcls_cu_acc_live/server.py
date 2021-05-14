@@ -35,7 +35,7 @@ def main():
     print("Starting server...")
     server = Server(
         AccModel,
-        "test",
+        "DEMO",
         protocols = ["ca"],
     )
 

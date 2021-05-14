@@ -137,7 +137,7 @@ def get_parser():
     parser.add_argument(
         '--model_pv_prefix',
         help='The EPICS PV Prefix used by the model.',
-        default='test:',
+        default='DEMO:',
         required=False
     )
     parser.add_argument(

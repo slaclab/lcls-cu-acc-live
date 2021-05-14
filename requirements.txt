@@ -1,4 +1,5 @@
 lume-model
 lume-epics
+lcls-live
 pytao
 bokeh

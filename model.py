@@ -1,9 +1,11 @@
 from pytao import Tao
 import numpy as np
 import json
+import time
 from typing import List
 from importlib.resources import files
 from lcls_live.datamaps import get_datamaps
+from lcls_live.datamaps.klystron import KlystronDataMap
 from lume_model.variables import ScalarInputVariable, ArrayInputVariable, ArrayOutputVariable, InputVariable, OutputVariable
 
 TAO_OUTKEYS = """ele.name
@@ -42,7 +44,7 @@ def get_tao(ALL_DATAMAPS, pvdata):
 class AccModel:
     def __init__(self, pv_defaults="data/PVDATA-2021-04-21T08:10:25.000000-07:00.json"):
         # Basic model with options
-        INIT = f'-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
+        INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 
         self.tao = Tao(INIT)
 
@@ -93,9 +95,9 @@ class AccModel:
         """.split('\n')
 
         for cmd in init_cmds:
-            self.tao.cmd(cmd)    
+            self.tao.cmd(cmd)
 
-        for cmd in cmds:
+        for cmd in cmds[1]:
             self.tao.cmd(cmd)
 
         for cmd in final_cmds:
@@ -127,7 +129,6 @@ class AccModel:
 
         for cmd in init_cmds:
             self.tao.cmd(cmd)
-            
 
         for cmd in cmds:
             self.tao.cmd(cmd)
@@ -144,15 +145,46 @@ class AccModel:
         return output
 
 
-    def evaluate(self, input_variables: List[InputVariable]) -> List[OutputVariable]:
-        self.input_variables = input_variables
-        pvdata = {variable.name: variable.value for variable in input_variables}
+    def evaluate(self, input_variables) -> List[OutputVariable]:
 
-        cmds = get_tao(self.dms, pvdata)
+        for variable in input_variables:
+            
+            self.input_variables[variable.name] = variable
+
+        time1 = time.time()
+        cmds = []
+        for dm in self.dms:
+            pvdata = {variable.name: variable.value for variable in input_variables}
+
+            if isinstance(dm, (KlystronDataMap,)):
+
+                if dm.swrd_pvname:
+                    pvdata[dm.swrd_pvname] = self.input_variables[dm.swrd_pvname].value
+
+                if dm.enld_pvname:
+                    pvdata[dm.enld_pvname] =self.input_variables[dm.enld_pvname].value
+
+                if dm.phase_pvname:
+                    pvdata[dm.phase_pvname] =self.input_variables[dm.phase_pvname].value
+
+                if dm.accelerate_pvname:
+                    pvdata[dm.accelerate_pvname] =self.input_variables[dm.accelerate_pvname].value
+
+
+                if dm.pvlist & pvdata.keys():
+
+                    if dm.has_fault_pvnames:
+                        fault_pvs = [self.input_variables[dm.swrd_pvname], self.input_variables[dm.stat_pvname], self.input_variables[dm.hdsc_pvname], self.input_variables[dm.dsta_pvname]]
+                        pvdata.update({pv.name: pv.value for pv in fault_pvs})
+
+            cmds += dm.as_tao(pvdata)
+            
+        cmds = [cmd for cmd in cmds if "! Bad value" not in cmd]
         output = self.run_tao(cmds)
 
         for variable in self.output_variables.values():
             variable.value = np.array(output[variable.name])
+        
 
         return self.output_variables.values()
 
@@ -160,4 +192,4 @@ if __name__ == "__main__":
     from lume_model.utils import save_variables
     model = AccModel()
     
-    save_variables(model.input_variables, model.output_variables, "files/model_variables.pickle")
+  #  save_variables(model.input_variables, model.output_variables, "files/model_variables.pickle")

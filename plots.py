@@ -6,7 +6,7 @@ from bokeh.models import ColumnDataSource, Div, HoverTool
 from bokeh.io import curdoc
 from lume_model.utils import load_variables
 
-prefix = "test"
+prefix = "DEMO"
 input_variables, output_variables = load_variables("files/model_variables.pickle")
 controller = Controller("ca", input_variables, output_variables, prefix)
 

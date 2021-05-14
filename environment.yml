@@ -4,8 +4,9 @@ channels:
 dependencies:
   - python=3.9
   - lume-model=0.11
-  - lume-epics=0.11
+  - lume-epics=0.12
   - pip
+  - bokeh
   - pytao
   - pip: 
     - git+https://github.com/slaclab/lcls-live.git

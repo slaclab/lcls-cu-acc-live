@@ -1,5 +1,5 @@
 from lume_epics.epics_server import Server
-from model import AccModel
+from lcls_cu_acc_live.model import AccModel
 import argparse
 import logging
 parser = argparse.ArgumentParser()

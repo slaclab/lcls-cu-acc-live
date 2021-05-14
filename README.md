@@ -2,7 +2,6 @@
 
 This project contains the tools for running the online Bmad model for the copper beamline (at present only cu_hxr) and syncing the online model with process variables collected from the live accelerator. 
 
-
 ## Environment
 
 The environment for this project may be set up using conda using the included `environment.yml`:
@@ -34,8 +33,13 @@ In order for the model to run, the following environment variables must be set:
 | LCLS_LATTICE | Path to lcls-lattice package on local machine |
 | ACC_ROOT_DIR | Path to local Bmad installation               |
 
+The server may then be started with:
+```
+$ start-server
+```
 
-### Remote EPICS access
+
+## Remote EPICS access
 
 This project defines a bridge for the purpose of syncing live accelerator variables with the model. This bridge will run in a separate shell from the server and make use of `lcls-live` utility functions for configuring remote access to EPICS variables. In order to do this, the following variables must be set:
 
@@ -57,6 +61,11 @@ This will create a background process, which will need to be manually killed via
 
 ```
 $ ps aux | grep ssh 
+```
+
+Finally, the bridge may be launched using:
+```
+$ start-bridge
 ```
 
 ### Plots

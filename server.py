@@ -30,9 +30,8 @@ if level is None:
 logging.basicConfig(level=level)
 logger = logging.getLogger("lume-epics")
 
-if __name__ == '__main__':
-    import os
-    import sys
+
+def main():
     print("Starting server...")
     server = Server(
         AccModel,
@@ -42,3 +41,10 @@ if __name__ == '__main__':
 
     server.start(monitor=True)
     print("Server stopped.")
+
+
+
+
+if __name__ == '__main__':
+    main()
+   

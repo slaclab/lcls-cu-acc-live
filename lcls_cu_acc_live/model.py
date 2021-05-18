@@ -4,9 +4,13 @@ import json
 import time
 from typing import List
 from importlib.resources import files
+from pkg_resources import resource_filename
 from lcls_live.datamaps import get_datamaps
 from lcls_live.datamaps.klystron import KlystronDataMap
 from lume_model.variables import ScalarInputVariable, ArrayInputVariable, ArrayOutputVariable, InputVariable, OutputVariable
+
+
+DEFAULT_PVDATA_FILE = resource_filename("lcls_cu_acc_live.data", "PVDATA-2021-04-21T08:10:25.000000-07:00.json")
 
 TAO_OUTKEYS = """ele.name
 ele.ix_ele
@@ -42,7 +46,7 @@ def get_tao(ALL_DATAMAPS, pvdata):
     return lines
 
 class AccModel:
-    def __init__(self, pv_defaults="data/PVDATA-2021-04-21T08:10:25.000000-07:00.json"):
+    def __init__(self, pv_defaults=DEFAULT_PVDATA_FILE):
         # Basic model with options
         INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 

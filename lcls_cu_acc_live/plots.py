@@ -1,3 +1,4 @@
+from pkg_resources import resource_filename
 from lume_epics.client.controller import Controller
 from lume_epics.client.widgets.tables import ValueTable
 from bokeh.plotting import figure
@@ -7,7 +8,10 @@ from bokeh.io import curdoc
 from lume_model.utils import load_variables
 
 prefix = "DEMO"
-input_variables, output_variables = load_variables("files/model_variables.pickle")
+
+variable_filename = resource_filename("lcls_cu_acc_live.files", "model_variables.pickle")
+input_variables, output_variables = load_variables(variable_filename)
+
 controller = Controller("ca", input_variables, output_variables, prefix)
 
 

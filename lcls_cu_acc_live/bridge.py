@@ -4,6 +4,7 @@ import logging
 import sys
 import os
 import threading
+from pkg_resources import resource_filename
 from lume_model.utils import load_variables
 import epics
 import pandas
@@ -131,7 +132,7 @@ def get_parser():
     parser.add_argument(
         '--variable_filename',
         help='Path to the pickled model variables',
-        default='./files/model_variables.pickle',
+        default=resource_filename("lcls_cu_acc_live.files", "model_variables.pickle"),
         required=False
     )
     parser.add_argument(

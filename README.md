@@ -13,7 +13,7 @@ $ conda env create -f environment.yml
 Once complete, activate the environment:
 
 ```
-$ conda activate lcls-cu-inj-live
+$ conda activate lcls-cu-acc-live
 ```
 
 Install the project locally:

@@ -97,7 +97,7 @@ class AccModel:
         for cmd in init_cmds:
             self.tao.cmd(cmd)
 
-        for cmd in cmds[1]:
+        for cmd in cmds:
             self.tao.cmd(cmd)
 
         for cmd in final_cmds:

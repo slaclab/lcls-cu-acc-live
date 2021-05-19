@@ -1,16 +1,20 @@
 from pytao import Tao
 import numpy as np
 import json
-import time
+import logging
 from typing import List
-from importlib.resources import files
 from pkg_resources import resource_filename
 from lcls_live.datamaps import get_datamaps
 from lcls_live.datamaps.klystron import KlystronDataMap
 from lume_model.variables import ScalarInputVariable, ArrayInputVariable, ArrayOutputVariable, InputVariable, OutputVariable
+from lume_model.models import SurrogateModel
+
+logger = logging.getLogger(__name__)
 
 
 DEFAULT_PVDATA_FILE = resource_filename("lcls_cu_acc_live.data", "PVDATA-2021-04-21T08:10:25.000000-07:00.json")
+#DEFAULT_PVDATA_FILE = resource_filename("lcls_cu_acc_live.data", "PVDATA-2021-04-21T08:10:25.000000-07:00_old.json")
+
 
 TAO_OUTKEYS = """ele.name
 ele.ix_ele
@@ -45,8 +49,9 @@ def get_tao(ALL_DATAMAPS, pvdata):
         lines += dm.as_tao(pvdata)
     return lines
 
-class AccModel:
-    def __init__(self, pv_defaults=DEFAULT_PVDATA_FILE):
+
+class AccModel(SurrogateModel):
+    def __init__(self, pv_defaults: str = DEFAULT_PVDATA_FILE):
         # Basic model with options
         INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 
@@ -57,7 +62,6 @@ class AccModel:
         if pv_defaults:
             with open(pv_defaults) as data_file:
                 pvdata = json.load(data_file)  
-
 
         #build input variables
         self.input_variables = {}
@@ -74,9 +78,11 @@ class AccModel:
                     self.input_variables[pv] = ArrayInputVariable(name=pv, default=np.array(value))
 
 
+        # initalizes
         cmds = get_tao(self.dms, pvdata)
         output = self.init_tao(cmds)
 
+        # update ouptutss
         self.output_variables = {}
         for key in TAO_OUTKEYS:
             if key == "ele.name":
@@ -85,7 +91,32 @@ class AccModel:
             else:
                 self.output_variables[key] = ArrayOutputVariable(name=key)
 
-    def init_tao(self, cmds):
+    def execute_tao(self, cmd: str) -> None:
+        """ Wrapper for Tao execution to handle exceptions.
+
+        Args:
+            cmd (str): Command to execute
+
+        """
+
+        try:
+            self.tao.cmd(cmd)
+
+        except RuntimeError as e:
+            logger.warning(e)
+
+
+
+    def init_tao(self, cmds: List[str]) -> dict:
+        """ Execution of tao initialization.
+
+        Args: 
+            cmds (List[str]): List of commands to execute
+
+        Returns:
+            dict: Tao output
+
+        """
         
         init_cmds = """
         set global lattice_calc_on = F
@@ -99,13 +130,14 @@ class AccModel:
         """.split('\n')
 
         for cmd in init_cmds:
-            self.tao.cmd(cmd)
+            self.execute_tao(cmd)
 
         for cmd in cmds:
-            self.tao.cmd(cmd)
+            self.execute_tao(cmd)
 
         for cmd in final_cmds:
-            self.tao.cmd(cmd)
+            self.execute_tao(cmd)
+
 
         output = {k:self.tao.lat_list('*', k) for k in TAO_OUTKEYS}
 
@@ -118,7 +150,19 @@ class AccModel:
 
 
 
-    def run_tao(self, cmds):
+    def run_tao(self, cmds: List[str]) -> dict:
+        """ Execution command for tao execution.
+
+        Args: 
+            cmds (List[str]): List of commands to execute
+
+        Returns:
+            dict: Tao output
+
+        """
+
+
+
         init_cmds = """
         set global lattice_calc_on = F
         set lattice model=design ! Reset the lattice
@@ -132,13 +176,13 @@ class AccModel:
         """.split('\n')
 
         for cmd in init_cmds:
-            self.tao.cmd(cmd)
+            self.execute_tao(cmd)
 
         for cmd in cmds:
-            self.tao.cmd(cmd)
+            self.execute_tao(cmd)
 
         for cmd in final_cmds:
-            self.tao.cmd(cmd)
+            self.execute_tao(cmd)
 
         output = {k:self.tao.lat_list('*', k) for k in TAO_OUTKEYS}
 
@@ -149,17 +193,25 @@ class AccModel:
         return output
 
 
-    def evaluate(self, input_variables) -> List[OutputVariable]:
+    def evaluate(self, input_variables: List[InputVariable]) -> List[OutputVariable]:
+        """ Implements the abstract base evaluate method to be executed by lume-epics server.
+
+        Args:
+            input_variables (List[InputVariable]): List of input variables to evaluate
+
+        """
 
         for variable in input_variables:
             
             self.input_variables[variable.name] = variable
 
-        time1 = time.time()
         cmds = []
         for dm in self.dms:
             pvdata = {variable.name: variable.value for variable in input_variables}
 
+            # handle the Klystron extra pvs
+            # these must be defined when getting commands from the klystron datamaps and might not be 
+            # provided in the update variables so access those stored
             if isinstance(dm, (KlystronDataMap,)):
 
                 if dm.swrd_pvname:
@@ -177,6 +229,7 @@ class AccModel:
 
                 if dm.pvlist & pvdata.keys():
 
+                    # same here with fault pvs
                     if dm.has_fault_pvnames:
                         fault_pvs = [self.input_variables[dm.swrd_pvname], self.input_variables[dm.stat_pvname], self.input_variables[dm.hdsc_pvname], self.input_variables[dm.dsta_pvname]]
                         pvdata.update({pv.name: pv.value for pv in fault_pvs})
@@ -184,16 +237,18 @@ class AccModel:
             cmds += dm.as_tao(pvdata)
             
         cmds = [cmd for cmd in cmds if "! Bad value" not in cmd]
+
         output = self.run_tao(cmds)
 
-        for variable in self.output_variables.values():
-            variable.value = np.array(output[variable.name])
+        # update output variables with the new values
+        for variable in output:
+            self.output_variables[variable].value = np.array(output[variable])
         
 
         return self.output_variables.values()
 
 if __name__ == "__main__":
+    # main method will generate the variable files
     from lume_model.utils import save_variables
-    model = AccModel()
-    
-  #  save_variables(model.input_variables, model.output_variables, "files/model_variables.pickle")
+    model = AccModel()  
+    save_variables(model.input_variables, model.output_variables, "lcls_cu_acc_live/files/model_variables.pickle")

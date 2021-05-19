@@ -15,17 +15,13 @@ logger = logging.getLogger(__name__)
 class Bridge:
     def __init__(self, model_pv_prefix, input_variables):
         self._mapping = None
-
         self._model_pv_prefix = model_pv_prefix
         self._input_variables = input_variables.values()
         self._process_mapping()
 
     def _process_mapping(self):
         """Creates the needed PVs and associated callbacks"""
-
         self._mapping = collections.defaultdict(dict)
-
-
 
         for variable in self._input_variables:
             pvname = variable.name
@@ -51,6 +47,7 @@ class Bridge:
         kwargs : dict
             Additional keyword arguments passed
         """
+        
         if value is None:
             return
         mapping = self._mapping[pvname]

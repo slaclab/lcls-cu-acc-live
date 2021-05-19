@@ -2,6 +2,7 @@ from lume_epics.epics_server import Server
 from lcls_cu_acc_live.model import AccModel
 import argparse
 import logging
+
 parser = argparse.ArgumentParser()
 
 parser.add_argument(
@@ -27,12 +28,14 @@ if level is None:
     raise ValueError(
         f"log level given: {options.log}"
         f" -- must be one of: {' | '.join(levels.keys())}")
+
 logging.basicConfig(level=level)
-logger = logging.getLogger("lume-epics")
+logger = logging.getLogger(__name__)
+logger.setLevel("INFO")
 
 
 def main():
-    print("Starting server...")
+    logger.info("Starting server...")
     server = Server(
         AccModel,
         "DEMO",
@@ -40,7 +43,7 @@ def main():
     )
 
     server.start(monitor=True)
-    print("Server stopped.")
+    logger.info("Server stopped.")
 
 
 

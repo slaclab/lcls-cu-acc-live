@@ -13,7 +13,6 @@ logger = logging.getLogger(__name__)
 
 
 DEFAULT_PVDATA_FILE = resource_filename("lcls_cu_acc_live.data", "PVDATA-2021-04-21T08:10:25.000000-07:00.json")
-#DEFAULT_PVDATA_FILE = resource_filename("lcls_cu_acc_live.data", "PVDATA-2021-04-21T08:10:25.000000-07:00_old.json")
 
 
 TAO_OUTKEYS = """ele.name

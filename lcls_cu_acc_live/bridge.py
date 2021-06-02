@@ -26,11 +26,11 @@ class Bridge:
         for variable in self._input_variables:
             pvname = variable.name
 
-            self._mapping[pvname]['accl_pv'] = epics.PV(
+            self._mapping[pvname]["accl_pv"] = epics.PV(
                 pvname, callback=self._process_pv
             )
-            self._mapping[pvname]['model_pv'] = epics.PV(
-                f'{self._model_pv_prefix}{pvname}'
+            self._mapping[pvname]["model_pv"] = epics.PV(
+                f"{self._model_pv_prefix}{pvname}"
             )
 
     def _process_pv(self, pvname, value, *args, **kwargs):
@@ -42,13 +42,12 @@ class Bridge:
             args (list): Additional arguments passed
             kwargs (dict): Additional keyword arguments passed
         """
-        
+
         if value is None:
             return
         mapping = self._mapping[pvname]
-        model_pv = mapping['model_pv']
-        thread = threading.Thread(target=self._dispatch,
-                                  args=(model_pv, value))
+        model_pv = mapping["model_pv"]
+        thread = threading.Thread(target=self._dispatch, args=(model_pv, value))
         thread.start()
 
     def _dispatch(self, model_pv, model_value):
@@ -61,9 +60,9 @@ class Bridge:
         """
 
         if not model_pv.connected:
-            logger.debug(f'Skipping dispatch as model PV is disconnected: {model_pv}')
+            logger.debug(f"Skipping dispatch as model PV is disconnected: {model_pv}")
             return
-        logger.debug(f'Writing value: {model_value} into: {model_pv}')
+        logger.debug(f"Writing value: {model_value} into: {model_pv}")
         if model_value:
             model_pv.put(model_value)
         else:
@@ -87,12 +86,11 @@ def launch(*, variable_filename, model_pv_prefix, log_level):
 
     handler = logging.StreamHandler(sys.stdout)
     handler.setLevel(log_level)
-    formatter = logging.Formatter(
-        '%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
     handler.setFormatter(formatter)
     root.addHandler(handler)
 
-    logger.info('Starting the Bridge to Live PVs')
+    logger.info("Starting the Bridge to Live PVs")
     input_variables, _ = load_variables(variable_filename)
     bridge = Bridge(model_pv_prefix, input_variables)
 
@@ -100,9 +98,9 @@ def launch(*, variable_filename, model_pv_prefix, log_level):
         while True:
             epics.ca.poll()
     except KeyboardInterrupt:
-        logger.info('Finishing Bridge...')
+        logger.info("Finishing Bridge...")
         pass
-    logger.info('Done!')
+    logger.info("Done!")
 
 
 def get_parser():
@@ -117,22 +115,22 @@ def get_parser():
     parser = argparse.ArgumentParser(description=proj_desc)
 
     parser.add_argument(
-        '--variable_filename',
-        help='Path to the pickled model variables',
+        "--variable_filename",
+        help="Path to the pickled model variables",
         default=resource_filename("lcls_cu_acc_live.files", "model_variables.pickle"),
-        required=False
+        required=False,
     )
     parser.add_argument(
-        '--model_pv_prefix',
-        help='The EPICS PV Prefix used by the model.',
-        default='DEMO:',
-        required=False
+        "--model_pv_prefix",
+        help="The EPICS PV Prefix used by the model.",
+        default="DEMO:",
+        required=False,
     )
     parser.add_argument(
-        '--log_level',
-        help='Configure level of log display',
-        choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
-        default='INFO'
+        "--log_level",
+        help="Configure level of log display",
+        choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
+        default="INFO",
     )
     return parser
 
@@ -153,7 +151,9 @@ def main():
     """
     Wrapper method to invoke the argument parser and launch the bridge
     """
-    os.environ["EPICS_CA_NAME_SERVERS"]=f"localhost:{os.environ['CA_NAME_SERVER_PORT']}"
+    os.environ[
+        "EPICS_CA_NAME_SERVERS"
+    ] = f"localhost:{os.environ['CA_NAME_SERVER_PORT']}"
     args = parse_arguments()
     kwargs = vars(args)
     launch(**kwargs)

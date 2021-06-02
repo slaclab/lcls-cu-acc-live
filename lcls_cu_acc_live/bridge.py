@@ -34,18 +34,13 @@ class Bridge:
             )
 
     def _process_pv(self, pvname, value, *args, **kwargs):
-        """
-        Callback to be executed when the real accelerator PV changes.
-        Parameters
-        ----------
-        pvname : str
-            The PV name
-        value : object
-            The PV value
-        args : list
-            Additional arguments passed
-        kwargs : dict
-            Additional keyword arguments passed
+        """ Callback to be executed when the real accelerator PV changes.
+
+        Args:
+            pvname (str): The PV name
+            value (object): The PV value
+            args (list): Additional arguments passed
+            kwargs (dict): Additional keyword arguments passed
         """
         
         if value is None:
@@ -57,16 +52,14 @@ class Bridge:
         thread.start()
 
     def _dispatch(self, model_pv, model_value):
-        """
-        Internal method invoked in a thread to execute the PUT operation since
+        """ Internal method invoked in a thread to execute the PUT operation since
         we can't do PUT operations inside of EPICS callbacks.
-        Parameters
-        ----------
-        model_pv : str
-            The model pv name
-        model_value : object
-            The value to write into `model_pv`
+        
+        Args:
+            model_pv (str): The model pv name
+            model_value (object): The value to write into `model_pv`
         """
+
         if not model_pv.connected:
             logger.debug(f'Skipping dispatch as model PV is disconnected: {model_pv}')
             return
@@ -82,16 +75,12 @@ def launch(*, variable_filename, model_pv_prefix, log_level):
     Main method of this application responsible for setting up a simple log
     handler and the bridge.
     This will run until terminated by the user.
-    Parameters
-    ----------
-    mapping_file : str
-        Path to the CSV file which maps model -> machine PVs.
-    model_pv_prefix : str
-        The prefix to be used when composing the model PV name.
-    denylist : list
-        Real machine PVs to be ignored when consuming the CSV file.
-    log_level : str
-        The level of verbosity to use for the logger (DEBUG, INFO, WARN, ERROR).
+    
+    Args:
+        mapping_file (str): Path to the CSV file which maps model -> machine PVs.
+        model_pv_prefix (str): The prefix to be used when composing the model PV name.
+        denylist (list): Real machine PVs to be ignored when consuming the CSV file.
+        log_level (str): The level of verbosity to use for the logger (DEBUG, INFO, WARN, ERROR).
     """
     root = logging.getLogger()
     root.setLevel(logging.DEBUG)
@@ -119,9 +108,10 @@ def launch(*, variable_filename, model_pv_prefix, log_level):
 def get_parser():
     """
     Returns the ArgumentParser for this command line application.
-    Returns
-    -------
-    parser : ArgumentParser
+
+    Args:
+        parser (ArgumentParser)
+
     """
     proj_desc = "Surrogate Model Bridge To Live Machine"
     parser = argparse.ArgumentParser(description=proj_desc)
@@ -151,9 +141,9 @@ def parse_arguments(*args, **kwargs):
     """
     Invokes the ArgumentParser provided by `get_parser` and returns the
     dictionary of configurations
-    Returns
-    -------
-    dict
+    
+    Args:
+        dict
     """
     parser = get_parser()
     return parser.parse_args(*args, **kwargs)

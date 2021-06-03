@@ -42,13 +42,12 @@ class Bridge:
             args (list): Additional arguments passed
             kwargs (dict): Additional keyword arguments passed
         """
-        
+
         if value is None:
             return
         mapping = self._mapping[pvname]
         model_pv = mapping['model_pv']
-        thread = threading.Thread(target=self._dispatch,
-                                  args=(model_pv, value))
+        thread = threading.Thread(target=self._dispatch, args=(model_pv, value))
         thread.start()
 
     def _dispatch(self, model_pv, model_value):
@@ -87,8 +86,7 @@ def launch(*, variable_filename, model_pv_prefix, log_level):
 
     handler = logging.StreamHandler(sys.stdout)
     handler.setLevel(log_level)
-    formatter = logging.Formatter(
-        '%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     handler.setFormatter(formatter)
     root.addHandler(handler)
 
@@ -120,19 +118,19 @@ def get_parser():
         '--variable_filename',
         help='Path to the pickled model variables',
         default=resource_filename("lcls_cu_acc_live.files", "model_variables.pickle"),
-        required=False
+        required=False,
     )
     parser.add_argument(
         '--model_pv_prefix',
         help='The EPICS PV Prefix used by the model.',
         default='DEMO:',
-        required=False
+        required=False,
     )
     parser.add_argument(
         '--log_level',
         help='Configure level of log display',
         choices=['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'],
-        default='INFO'
+        default='INFO',
     )
     return parser
 
@@ -153,7 +151,9 @@ def main():
     """
     Wrapper method to invoke the argument parser and launch the bridge
     """
-    os.environ["EPICS_CA_NAME_SERVERS"]=f"localhost:{os.environ['CA_NAME_SERVER_PORT']}"
+    os.environ[
+        "EPICS_CA_NAME_SERVERS"
+    ] = f"localhost:{os.environ['CA_NAME_SERVER_PORT']}"
     args = parse_arguments()
     kwargs = vars(args)
     launch(**kwargs)

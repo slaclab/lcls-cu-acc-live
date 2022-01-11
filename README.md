@@ -63,11 +63,6 @@ This will create a background process, which will need to be manually killed via
 $ ps aux | grep ssh 
 ```
 
-Finally, the bridge may be launched using:
-```
-$ start-bridge
-```
-
 ### Plots
 
 In a third window, serve the bokeh display using the command:

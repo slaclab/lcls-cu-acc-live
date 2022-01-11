@@ -50,7 +50,7 @@ ele.vec0
 
 def get_tao(ALL_DATAMAPS, pvdata):
     lines = []
-    for dm in ALL_DATAMAPS:
+    for dm in ALL_DATAMAPS.values():
         lines += dm.as_tao(pvdata)
     return lines
 
@@ -61,17 +61,18 @@ class AccModel(SurrogateModel):
         INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 
         self.tao = Tao(INIT)
+        self.dms = get_datamaps("cu_hxr")
         self.input_variables = input_variables
         self.output_variables = output_variables
 
         pvdata = {}
-
-        for input_variable in input_variables:
-            pvdata[input_variable.name] = input_variable.default
+        for input_variable_name, input_variable in input_variables.items():
+            pvdata[input_variable_name] = input_variable.default
 
         #initialize
         cmds = get_tao(self.dms, pvdata)
         self.init_tao(cmds)
+
 
     @classmethod
     def build_variable_file(self, pv_defaults, variable_filename, config_filename):
@@ -114,7 +115,7 @@ class AccModel(SurrogateModel):
         self.output_variables = {}
         for key in TAO_OUTKEYS:
             if key == "ele.name":
-                data["output_variables"][key] = {"name": key, "default": value, "type": "array"}
+                data["output_variables"][key] = {"name": key, "type": "array"}
 
             else:
                 data["output_variables"][key] = {"name": key, "type": "array"}

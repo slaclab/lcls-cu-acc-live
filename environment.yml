@@ -2,11 +2,12 @@ name: lcls-cu-acc-live
 channels:
   - conda-forge
 dependencies:
-  - python=3.9
-  - lume-model=0.11
-  - lume-epics=0.12
+  - python=3.8
+  - lume-epics=1.1
   - pip
   - bokeh
   - pytao
+  - bmad
   - pip: 
     - git+https://github.com/slaclab/lcls-live.git
+    - git+https://github.com/slaclab/lume-model.git

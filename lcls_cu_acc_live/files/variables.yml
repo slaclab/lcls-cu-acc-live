@@ -7536,7 +7536,6 @@ output_variables:
     name: ele.mat6
     type: array
   ele.name:
-    default: 11.0
     name: ele.name
     type: array
   ele.p0c:

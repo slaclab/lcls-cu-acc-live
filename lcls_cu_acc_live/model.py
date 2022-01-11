@@ -56,7 +56,7 @@ def get_tao(ALL_DATAMAPS, pvdata):
 
 
 class AccModel(SurrogateModel):
-    def __init__(self, pv_defaults: str = DEFAULT_PVDATA_FILE, input_variables=[], output_variables=[]):
+    def __init__(self, pv_defaults: str = DEFAULT_PVDATA_FILE, input_variables={}, output_variables={}):
         # Basic model with options
         INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 
@@ -248,7 +248,7 @@ class AccModel(SurrogateModel):
             self.input_variables[variable.name] = variable
 
         cmds = []
-        for dm in self.dms:
+        for dm in self.dms.values():
             pvdata = {variable.name: variable.value for variable in input_variables}
 
             # handle the Klystron extra pvs
@@ -302,8 +302,6 @@ if __name__ == "__main__":
     import os
 
     root_dir = os.path.dirname(os.path.abspath(__file__))
-
-
 
     variable_filename= f"{root_dir}/files/variables.yml"
     epics_config_filename = f"{root_dir}/files/epics_config.yml"

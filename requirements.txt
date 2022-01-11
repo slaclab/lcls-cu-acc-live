@@ -1,4 +1,4 @@
-lume-model
+lume-model>=0.13
 lume-epics
 lcls-live
 pytao

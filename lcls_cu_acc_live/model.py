@@ -1,15 +1,13 @@
 from pytao import Tao
 import numpy as np
 import json
+import yaml
 import logging
 from typing import List
 from pkg_resources import resource_filename
 from lcls_live.datamaps import get_datamaps
 from lcls_live.datamaps.klystron import KlystronDataMap
 from lume_model.variables import (
-    ScalarInputVariable,
-    ArrayInputVariable,
-    ArrayOutputVariable,
     InputVariable,
     OutputVariable,
 )
@@ -21,7 +19,6 @@ logger = logging.getLogger(__name__)
 DEFAULT_PVDATA_FILE = resource_filename(
     "lcls_cu_acc_live.data", "PVDATA-2021-04-21T08:10:25.000000-07:00.json"
 )
-
 
 TAO_OUTKEYS = """ele.name
 ele.ix_ele
@@ -59,50 +56,77 @@ def get_tao(ALL_DATAMAPS, pvdata):
 
 
 class AccModel(SurrogateModel):
-    def __init__(self, pv_defaults: str = DEFAULT_PVDATA_FILE):
+    def __init__(self, pv_defaults: str = DEFAULT_PVDATA_FILE, input_variables=[], output_variables=[]):
         # Basic model with options
         INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
 
         self.tao = Tao(INIT)
+        self.input_variables = input_variables
+        self.output_variables = output_variables
 
-        self.dms = get_datamaps("cu_hxr")
+        pvdata = {}
+
+        for input_variable in input_variables:
+            pvdata[input_variable.name] = input_variable.default
+
+        #initialize
+        cmds = get_tao(self.dms, pvdata)
+        self.init_tao(cmds)
+
+    @classmethod
+    def build_variable_file(self, pv_defaults, variable_filename, config_filename):
+        # Basic model with options
+        INIT = '-init $LCLS_LATTICE/bmad/models/cu_hxr/tao.init -slice OTR2:END -noplot'
+
+        tao = Tao(INIT)
+
+        dms = get_datamaps("cu_hxr")
+        pv_default_file = pv_defaults
 
         if pv_defaults:
             with open(pv_defaults) as data_file:
                 pvdata = json.load(data_file)
 
+        with open(pv_default_file, "r") as data_file:
+            pvdata = json.load(data_file)
+
+        # CREATE VARIABLE FILE
+
+        data = {"input_variables": {}, "output_variables": {}}
+        pvs = {"input_variables": {}, "output_variables": {}}
+
         # build input variables
-        self.input_variables = {}
-        for dm in self.dms:
+        for dm in dms.values():
             for pv in dm.pvlist:
                 value = pvdata.get(pv)
                 if value is None:
                     value = 0
 
                 if isinstance(value, (float, int, type(None))):
-                    self.input_variables[pv] = ScalarInputVariable(
-                        name=pv, range=[-np.inf, np.inf], default=value
-                    )
+                    data["input_variables"][pv] = {"name": pv, "range": [-np.inf, np.inf], "default":value, "type": "scalar"}
 
                 elif isinstance(value, (list)):
-                    self.input_variables[pv] = ArrayInputVariable(
-                        name=pv, default=np.array(value)
-                    )
+                    data["input_variables"][pv] = {"name": pv,"default":value, "type": "array"}
 
-        # initalizes
-        cmds = get_tao(self.dms, pvdata)
-        output = self.init_tao(cmds)
+                pvs["input_variables"][pv] = {"pvname": pv, "serve": False, "protocol": "ca"}
 
-        # update ouptutss
+        # update ouptuts
         self.output_variables = {}
         for key in TAO_OUTKEYS:
             if key == "ele.name":
-                self.output_variables[key] = ArrayOutputVariable(
-                    name=key, value_type="string"
-                )
+                data["output_variables"][key] = {"name": key, "default": value, "type": "array"}
 
             else:
-                self.output_variables[key] = ArrayOutputVariable(name=key)
+                data["output_variables"][key] = {"name": key, "type": "array"}
+
+            pvs["output_variables"][key] = {"pvname": key, "protocol": "pva"}
+
+        with open(variable_filename, "w") as f:
+            yaml.dump(data, f, default_flow_style=False) 
+
+        with open(config_filename, "w") as f:
+            yaml.dump(pvs, f, default_flow_style=False) 
+
 
     def execute_tao(self, cmd: str) -> None:
         """ Wrapper for Tao execution to handle exceptions.
@@ -274,11 +298,13 @@ class AccModel(SurrogateModel):
 
 if __name__ == "__main__":
     # main method will generate the variable files
-    from lume_model.utils import save_variables
+    import os
 
-    model = AccModel()
-    save_variables(
-        model.input_variables,
-        model.output_variables,
-        "lcls_cu_acc_live/files/model_variables.pickle",
-    )
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+
+    variable_filename= f"{root_dir}/files/variables.yml"
+    epics_config_filename = f"{root_dir}/files/epics_config.yml"
+
+    vars = AccModel.build_variable_file(DEFAULT_PVDATA_FILE, variable_filename, epics_config_filename)

@@ -97,7 +97,7 @@ class AccModel(SurrogateModel):
         pvs = {"input_variables": {}, "output_variables": {}}
 
         # build input variables
-        for dm in dms.values():
+        for dm in dms:
             for pv in dm.pvlist:
                 value = pvdata.get(pv)
                 if value is None:
@@ -136,7 +136,6 @@ class AccModel(SurrogateModel):
             cmd (str): Command to execute
 
         """
-
         try:
             self.tao.cmd(cmd)
 
@@ -186,7 +185,6 @@ class AccModel(SurrogateModel):
             len(output["ele.mat6"]) // 36, 6, 6
         )
         output["ele.vec0"] = output["ele.vec0"].reshape(len(output["ele.vec0"]) // 6, 6)
-
         return output
 
     def run_tao(self, cmds: List[str]) -> dict:
@@ -287,7 +285,6 @@ class AccModel(SurrogateModel):
             cmds += dm.as_tao(pvdata)
 
         cmds = [cmd for cmd in cmds if "! Bad value" not in cmd]
-
         output = self.run_tao(cmds)
 
         # update output variables with the new values

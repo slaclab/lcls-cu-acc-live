@@ -1,7 +1,11 @@
 from lume_epics.epics_server import Server
 from lcls_cu_acc_live.model import AccModel
+from lume_model.utils import variables_from_yaml
+from lume_epics.utils import config_from_yaml
 import argparse
 import logging
+from lcls_cu_acc_live import VARIABLE_FILE, EPICS_CONFIG_FILE
+
 
 parser = argparse.ArgumentParser()
 
@@ -35,7 +39,17 @@ logger.setLevel("INFO")
 
 def main():
     logger.info("Starting server...")
-    server = Server(AccModel, "DEMO", protocols=["ca"],)
+
+    with open(VARIABLE_FILE, "r") as f:
+        input_variables, output_variables = variables_from_yaml(f)
+
+    with open(EPICS_CONFIG_FILE, "r") as f:
+        epics_config = config_from_yaml(f)
+
+    server = Server(AccModel, epics_config, model_kwargs={
+            "input_variables": input_variables,
+            "output_variables": output_variables,
+        },)
 
     server.start(monitor=True)
     logger.info("Server stopped.")

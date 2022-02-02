@@ -33,10 +33,6 @@ In order for the model to run, the following environment variables must be set:
 | LCLS_LATTICE | Path to lcls-lattice package on local machine |
 | ACC_ROOT_DIR | Path to local Bmad installation               |
 
-The server may then be started with:
-```
-$ start-server
-```
 
 
 ## Remote EPICS access
@@ -63,10 +59,11 @@ This will create a background process, which will need to be manually killed via
 $ ps aux | grep ssh 
 ```
 
-Finally, the bridge may be launched using:
+
 ```
-$ start-bridge
+$ start-server
 ```
+
 
 ### Plots
 

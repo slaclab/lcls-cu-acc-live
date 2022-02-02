@@ -1,0 +1,7561 @@
+input_variables:
+  ACCL:LI21:180:L1X_S_AV:
+    default: 17.765575680624593
+    name: ACCL:LI21:180:L1X_S_AV
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI21:180:L1X_S_PV:
+    default: -160.19061303694605
+    name: ACCL:LI21:180:L1X_S_PV
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI21:1:L1S_S_AV:
+    default: 110.97650650294992
+    name: ACCL:LI21:1:L1S_S_AV
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI21:1:L1S_S_PV:
+    default: -22.43420088792822
+    name: ACCL:LI21:1:L1S_S_PV
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI22:1:PDES:
+    default: -36.284427384073055
+    name: ACCL:LI22:1:PDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI24:100:KLY_PDES:
+    default: 4.923992313226024
+    name: ACCL:LI24:100:KLY_PDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI24:200:KLY_PDES:
+    default: -36.284427384073055
+    name: ACCL:LI24:200:KLY_PDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI24:300:KLY_PDES:
+    default: -77.49284708137213
+    name: ACCL:LI24:300:KLY_PDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI25:1:PDES:
+    default: 0.0
+    name: ACCL:LI25:1:PDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI29:0:KLY_PDES:
+    default: -34.02662204221866
+    name: ACCL:LI29:0:KLY_PDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  ACCL:LI30:0:KLY_PDES:
+    default: 34.02662204221866
+    name: ACCL:LI30:0:KLY_PDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BEND:DMPH:400:EDES:
+    default: 11.0
+    name: BEND:DMPH:400:EDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BEND:LI21:231:EDES:
+    default: 0.22
+    name: BEND:LI21:231:EDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BEND:LI24:790:EDES:
+    default: 4.5
+    name: BEND:LI24:790:EDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BMLN:LI21:235:MOTR:
+    default: 247.85581047127175
+    name: BMLN:LI21:235:MOTR
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BMLN:LI24:805:MOTR:
+    default: 385.0
+    name: BMLN:LI24:805:MOTR
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:445:XCUH1H:
+    default: 0
+    name: BPMS:BSYH:445:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:445:YCUH1H:
+    default: 0
+    name: BPMS:BSYH:445:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:465:XCUH1H:
+    default: 0
+    name: BPMS:BSYH:465:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:465:YCUH1H:
+    default: 0
+    name: BPMS:BSYH:465:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:640:XCUH1H:
+    default: 0
+    name: BPMS:BSYH:640:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:640:YCUH1H:
+    default: 0
+    name: BPMS:BSYH:640:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:735:XCUH1H:
+    default: 0
+    name: BPMS:BSYH:735:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:735:YCUH1H:
+    default: 0
+    name: BPMS:BSYH:735:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:910:XCUH1H:
+    default: 0
+    name: BPMS:BSYH:910:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:BSYH:910:YCUH1H:
+    default: 0
+    name: BPMS:BSYH:910:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:CLTH:140:XCUH1H:
+    default: 0
+    name: BPMS:CLTH:140:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:CLTH:140:YCUH1H:
+    default: 0
+    name: BPMS:CLTH:140:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:CLTH:170:XCUH1H:
+    default: 0
+    name: BPMS:CLTH:170:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:CLTH:170:YCUH1H:
+    default: 0
+    name: BPMS:CLTH:170:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:CLTH:215:XCUH1H:
+    default: 0
+    name: BPMS:CLTH:215:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:CLTH:215:YCUH1H:
+    default: 0
+    name: BPMS:CLTH:215:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:325:XCUH1H:
+    default: 0
+    name: BPMS:DMPH:325:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:325:YCUH1H:
+    default: 0
+    name: BPMS:DMPH:325:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:381:XCUH1H:
+    default: 0
+    name: BPMS:DMPH:381:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:381:YCUH1H:
+    default: 0
+    name: BPMS:DMPH:381:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:502:XCUH1H:
+    default: 0
+    name: BPMS:DMPH:502:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:502:YCUH1H:
+    default: 0
+    name: BPMS:DMPH:502:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:693:XCUH1H:
+    default: 0
+    name: BPMS:DMPH:693:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:DMPH:693:YCUH1H:
+    default: 0
+    name: BPMS:DMPH:693:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:581:XCUH1H:
+    default: 0
+    name: BPMS:IN20:581:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:581:YCUH1H:
+    default: 0
+    name: BPMS:IN20:581:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:631:XCUH1H:
+    default: 0
+    name: BPMS:IN20:631:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:631:YCUH1H:
+    default: 0
+    name: BPMS:IN20:631:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:651:XCUH1H:
+    default: 0
+    name: BPMS:IN20:651:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:651:YCUH1H:
+    default: 0
+    name: BPMS:IN20:651:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:731:XCUH1H:
+    default: 0
+    name: BPMS:IN20:731:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:731:YCUH1H:
+    default: 0
+    name: BPMS:IN20:731:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:771:XCUH1H:
+    default: 0
+    name: BPMS:IN20:771:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:771:YCUH1H:
+    default: 0
+    name: BPMS:IN20:771:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:781:XCUH1H:
+    default: 0
+    name: BPMS:IN20:781:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:IN20:781:YCUH1H:
+    default: 0
+    name: BPMS:IN20:781:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:131:XCUH1H:
+    default: 0
+    name: BPMS:LI21:131:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:131:YCUH1H:
+    default: 0
+    name: BPMS:LI21:131:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:161:XCUH1H:
+    default: 0
+    name: BPMS:LI21:161:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:161:YCUH1H:
+    default: 0
+    name: BPMS:LI21:161:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:201:XCUH1H:
+    default: 0
+    name: BPMS:LI21:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:201:YCUH1H:
+    default: 0
+    name: BPMS:LI21:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:233:XCUH1H:
+    default: 0
+    name: BPMS:LI21:233:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:233:YCUH1H:
+    default: 0
+    name: BPMS:LI21:233:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:278:XCUH1H:
+    default: 0
+    name: BPMS:LI21:278:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:278:YCUH1H:
+    default: 0
+    name: BPMS:LI21:278:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:301:XCUH1H:
+    default: 0
+    name: BPMS:LI21:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:301:YCUH1H:
+    default: 0
+    name: BPMS:LI21:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:315:XCUH1H:
+    default: 0
+    name: BPMS:LI21:315:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:315:YCUH1H:
+    default: 0
+    name: BPMS:LI21:315:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:401:XCUH1H:
+    default: 0
+    name: BPMS:LI21:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:401:YCUH1H:
+    default: 0
+    name: BPMS:LI21:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:501:XCUH1H:
+    default: 0
+    name: BPMS:LI21:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:501:YCUH1H:
+    default: 0
+    name: BPMS:LI21:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:601:XCUH1H:
+    default: 0
+    name: BPMS:LI21:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:601:YCUH1H:
+    default: 0
+    name: BPMS:LI21:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:701:XCUH1H:
+    default: 0
+    name: BPMS:LI21:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:701:YCUH1H:
+    default: 0
+    name: BPMS:LI21:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:801:XCUH1H:
+    default: 0
+    name: BPMS:LI21:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:801:YCUH1H:
+    default: 0
+    name: BPMS:LI21:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:901:XCUH1H:
+    default: 0
+    name: BPMS:LI21:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI21:901:YCUH1H:
+    default: 0
+    name: BPMS:LI21:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:201:XCUH1H:
+    default: 0
+    name: BPMS:LI22:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:201:YCUH1H:
+    default: 0
+    name: BPMS:LI22:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:301:XCUH1H:
+    default: 0
+    name: BPMS:LI22:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:301:YCUH1H:
+    default: 0
+    name: BPMS:LI22:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:401:XCUH1H:
+    default: 0
+    name: BPMS:LI22:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:401:YCUH1H:
+    default: 0
+    name: BPMS:LI22:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:501:XCUH1H:
+    default: 0
+    name: BPMS:LI22:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:501:YCUH1H:
+    default: 0
+    name: BPMS:LI22:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:601:XCUH1H:
+    default: 0
+    name: BPMS:LI22:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:601:YCUH1H:
+    default: 0
+    name: BPMS:LI22:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:701:XCUH1H:
+    default: 0
+    name: BPMS:LI22:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:701:YCUH1H:
+    default: 0
+    name: BPMS:LI22:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:801:XCUH1H:
+    default: 0
+    name: BPMS:LI22:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:801:YCUH1H:
+    default: 0
+    name: BPMS:LI22:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:901:XCUH1H:
+    default: 0
+    name: BPMS:LI22:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI22:901:YCUH1H:
+    default: 0
+    name: BPMS:LI22:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:201:XCUH1H:
+    default: 0
+    name: BPMS:LI23:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:201:YCUH1H:
+    default: 0
+    name: BPMS:LI23:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:301:XCUH1H:
+    default: 0
+    name: BPMS:LI23:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:301:YCUH1H:
+    default: 0
+    name: BPMS:LI23:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:401:XCUH1H:
+    default: 0
+    name: BPMS:LI23:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:401:YCUH1H:
+    default: 0
+    name: BPMS:LI23:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:501:XCUH1H:
+    default: 0
+    name: BPMS:LI23:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:501:YCUH1H:
+    default: 0
+    name: BPMS:LI23:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:601:XCUH1H:
+    default: 0
+    name: BPMS:LI23:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:601:YCUH1H:
+    default: 0
+    name: BPMS:LI23:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:701:XCUH1H:
+    default: 0
+    name: BPMS:LI23:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:701:YCUH1H:
+    default: 0
+    name: BPMS:LI23:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:801:XCUH1H:
+    default: 0
+    name: BPMS:LI23:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:801:YCUH1H:
+    default: 0
+    name: BPMS:LI23:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:901:XCUH1H:
+    default: 0
+    name: BPMS:LI23:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI23:901:YCUH1H:
+    default: 0
+    name: BPMS:LI23:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:201:XCUH1H:
+    default: 0
+    name: BPMS:LI24:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:201:YCUH1H:
+    default: 0
+    name: BPMS:LI24:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:301:XCUH1H:
+    default: 0
+    name: BPMS:LI24:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:301:YCUH1H:
+    default: 0
+    name: BPMS:LI24:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:401:XCUH1H:
+    default: 0
+    name: BPMS:LI24:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:401:YCUH1H:
+    default: 0
+    name: BPMS:LI24:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:501:XCUH1H:
+    default: 0
+    name: BPMS:LI24:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:501:YCUH1H:
+    default: 0
+    name: BPMS:LI24:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:601:XCUH1H:
+    default: 0
+    name: BPMS:LI24:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:601:YCUH1H:
+    default: 0
+    name: BPMS:LI24:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:701:XCUH1H:
+    default: 0
+    name: BPMS:LI24:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:701:YCUH1H:
+    default: 0
+    name: BPMS:LI24:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:801:XCUH1H:
+    default: 0
+    name: BPMS:LI24:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:801:YCUH1H:
+    default: 0
+    name: BPMS:LI24:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:901:XCUH1H:
+    default: 0
+    name: BPMS:LI24:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI24:901:YCUH1H:
+    default: 0
+    name: BPMS:LI24:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:201:XCUH1H:
+    default: 0
+    name: BPMS:LI25:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:201:YCUH1H:
+    default: 0
+    name: BPMS:LI25:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:301:XCUH1H:
+    default: 0
+    name: BPMS:LI25:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:301:YCUH1H:
+    default: 0
+    name: BPMS:LI25:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:401:XCUH1H:
+    default: 0
+    name: BPMS:LI25:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:401:YCUH1H:
+    default: 0
+    name: BPMS:LI25:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:501:XCUH1H:
+    default: 0
+    name: BPMS:LI25:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:501:YCUH1H:
+    default: 0
+    name: BPMS:LI25:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:601:XCUH1H:
+    default: 0
+    name: BPMS:LI25:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:601:YCUH1H:
+    default: 0
+    name: BPMS:LI25:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:701:XCUH1H:
+    default: 0
+    name: BPMS:LI25:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:701:YCUH1H:
+    default: 0
+    name: BPMS:LI25:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:801:XCUH1H:
+    default: 0
+    name: BPMS:LI25:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:801:YCUH1H:
+    default: 0
+    name: BPMS:LI25:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:901:XCUH1H:
+    default: 0
+    name: BPMS:LI25:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI25:901:YCUH1H:
+    default: 0
+    name: BPMS:LI25:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:201:XCUH1H:
+    default: 0
+    name: BPMS:LI26:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:201:YCUH1H:
+    default: 0
+    name: BPMS:LI26:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:301:XCUH1H:
+    default: 0
+    name: BPMS:LI26:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:301:YCUH1H:
+    default: 0
+    name: BPMS:LI26:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:401:XCUH1H:
+    default: 0
+    name: BPMS:LI26:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:401:YCUH1H:
+    default: 0
+    name: BPMS:LI26:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:501:XCUH1H:
+    default: 0
+    name: BPMS:LI26:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:501:YCUH1H:
+    default: 0
+    name: BPMS:LI26:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:601:XCUH1H:
+    default: 0
+    name: BPMS:LI26:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:601:YCUH1H:
+    default: 0
+    name: BPMS:LI26:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:701:XCUH1H:
+    default: 0
+    name: BPMS:LI26:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:701:YCUH1H:
+    default: 0
+    name: BPMS:LI26:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:801:XCUH1H:
+    default: 0
+    name: BPMS:LI26:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:801:YCUH1H:
+    default: 0
+    name: BPMS:LI26:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:901:XCUH1H:
+    default: 0
+    name: BPMS:LI26:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI26:901:YCUH1H:
+    default: 0
+    name: BPMS:LI26:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:201:XCUH1H:
+    default: 0
+    name: BPMS:LI27:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:201:YCUH1H:
+    default: 0
+    name: BPMS:LI27:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:301:XCUH1H:
+    default: 0
+    name: BPMS:LI27:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:301:YCUH1H:
+    default: 0
+    name: BPMS:LI27:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:401:XCUH1H:
+    default: 0
+    name: BPMS:LI27:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:401:YCUH1H:
+    default: 0
+    name: BPMS:LI27:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:501:XCUH1H:
+    default: 0
+    name: BPMS:LI27:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:501:YCUH1H:
+    default: 0
+    name: BPMS:LI27:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:601:XCUH1H:
+    default: 0
+    name: BPMS:LI27:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:601:YCUH1H:
+    default: 0
+    name: BPMS:LI27:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:701:XCUH1H:
+    default: 0
+    name: BPMS:LI27:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:701:YCUH1H:
+    default: 0
+    name: BPMS:LI27:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:801:XCUH1H:
+    default: 0
+    name: BPMS:LI27:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:801:YCUH1H:
+    default: 0
+    name: BPMS:LI27:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:901:XCUH1H:
+    default: 0
+    name: BPMS:LI27:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI27:901:YCUH1H:
+    default: 0
+    name: BPMS:LI27:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:201:XCUH1H:
+    default: 0
+    name: BPMS:LI28:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:201:YCUH1H:
+    default: 0
+    name: BPMS:LI28:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:301:XCUH1H:
+    default: 0
+    name: BPMS:LI28:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:301:YCUH1H:
+    default: 0
+    name: BPMS:LI28:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:401:XCUH1H:
+    default: 0
+    name: BPMS:LI28:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:401:YCUH1H:
+    default: 0
+    name: BPMS:LI28:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:501:XCUH1H:
+    default: 0
+    name: BPMS:LI28:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:501:YCUH1H:
+    default: 0
+    name: BPMS:LI28:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:601:XCUH1H:
+    default: 0
+    name: BPMS:LI28:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:601:YCUH1H:
+    default: 0
+    name: BPMS:LI28:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:701:XCUH1H:
+    default: 0
+    name: BPMS:LI28:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:701:YCUH1H:
+    default: 0
+    name: BPMS:LI28:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:801:XCUH1H:
+    default: 0
+    name: BPMS:LI28:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:801:YCUH1H:
+    default: 0
+    name: BPMS:LI28:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:901:XCUH1H:
+    default: 0
+    name: BPMS:LI28:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI28:901:YCUH1H:
+    default: 0
+    name: BPMS:LI28:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:201:XCUH1H:
+    default: 0
+    name: BPMS:LI29:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:201:YCUH1H:
+    default: 0
+    name: BPMS:LI29:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:301:XCUH1H:
+    default: 0
+    name: BPMS:LI29:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:301:YCUH1H:
+    default: 0
+    name: BPMS:LI29:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:401:XCUH1H:
+    default: 0
+    name: BPMS:LI29:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:401:YCUH1H:
+    default: 0
+    name: BPMS:LI29:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:501:XCUH1H:
+    default: 0
+    name: BPMS:LI29:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:501:YCUH1H:
+    default: 0
+    name: BPMS:LI29:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:601:XCUH1H:
+    default: 0
+    name: BPMS:LI29:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:601:YCUH1H:
+    default: 0
+    name: BPMS:LI29:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:701:XCUH1H:
+    default: 0
+    name: BPMS:LI29:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:701:YCUH1H:
+    default: 0
+    name: BPMS:LI29:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:801:XCUH1H:
+    default: 0
+    name: BPMS:LI29:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:801:YCUH1H:
+    default: 0
+    name: BPMS:LI29:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:901:XCUH1H:
+    default: 0
+    name: BPMS:LI29:901:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI29:901:YCUH1H:
+    default: 0
+    name: BPMS:LI29:901:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:201:XCUH1H:
+    default: 0
+    name: BPMS:LI30:201:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:201:YCUH1H:
+    default: 0
+    name: BPMS:LI30:201:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:301:XCUH1H:
+    default: 0
+    name: BPMS:LI30:301:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:301:YCUH1H:
+    default: 0
+    name: BPMS:LI30:301:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:401:XCUH1H:
+    default: 0
+    name: BPMS:LI30:401:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:401:YCUH1H:
+    default: 0
+    name: BPMS:LI30:401:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:501:XCUH1H:
+    default: 0
+    name: BPMS:LI30:501:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:501:YCUH1H:
+    default: 0
+    name: BPMS:LI30:501:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:601:XCUH1H:
+    default: 0
+    name: BPMS:LI30:601:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:601:YCUH1H:
+    default: 0
+    name: BPMS:LI30:601:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:701:XCUH1H:
+    default: 0
+    name: BPMS:LI30:701:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:701:YCUH1H:
+    default: 0
+    name: BPMS:LI30:701:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:801:XCUH1H:
+    default: 0
+    name: BPMS:LI30:801:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LI30:801:YCUH1H:
+    default: 0
+    name: BPMS:LI30:801:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:110:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:110:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:110:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:110:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:120:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:120:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:120:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:120:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:130:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:130:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:130:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:130:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:150:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:150:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:150:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:150:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:170:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:170:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:170:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:170:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:180:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:180:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:180:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:180:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:190:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:190:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:190:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:190:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:250:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:250:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:250:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:250:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:290:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:290:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:290:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:290:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:350:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:350:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:350:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:350:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:390:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:390:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:390:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:390:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:450:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:450:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:450:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:450:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:490:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:490:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:490:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:490:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:550:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:550:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:550:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:550:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:590:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:590:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:590:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:590:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:620:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:620:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:620:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:620:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:640:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:640:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:640:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:640:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:660:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:660:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:660:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:660:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:680:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:680:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:680:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:680:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:720:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:720:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:720:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:720:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:730:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:730:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:730:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:730:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:740:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:740:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:740:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:740:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:750:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:750:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:750:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:750:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:760:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:760:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:760:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:760:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:770:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:770:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:770:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:770:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:820:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:820:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:820:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:820:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:840:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:840:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:840:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:840:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:860:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:860:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:860:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:860:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:880:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:880:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:880:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:880:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:910:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:910:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:910:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:910:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:960:XCUH1H:
+    default: 0
+    name: BPMS:LTUH:960:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:LTUH:960:YCUH1H:
+    default: 0
+    name: BPMS:LTUH:960:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1305:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1305:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1305:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1305:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1390:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1390:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1390:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1390:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1490:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1490:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1490:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1490:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1590:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1590:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1590:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1590:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1690:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1690:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1690:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1690:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1790:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1790:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1790:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1790:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1890:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1890:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1890:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1890:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1990:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:1990:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:1990:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:1990:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2090:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2090:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2090:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2090:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2190:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2190:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2190:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2190:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2290:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2290:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2290:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2290:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2390:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2390:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2390:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2390:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2490:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2490:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2490:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2490:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2590:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2590:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2590:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2590:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2690:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2690:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2690:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2690:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2790:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2790:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2790:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2790:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2890:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2890:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2890:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2890:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2990:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:2990:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:2990:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:2990:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3090:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3090:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3090:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3090:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3190:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3190:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3190:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3190:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3290:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3290:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3290:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3290:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3390:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3390:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3390:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3390:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3490:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3490:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3490:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3490:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3590:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3590:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3590:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3590:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3690:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3690:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3690:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3690:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3790:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3790:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3790:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3790:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3890:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3890:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3890:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3890:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3990:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:3990:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:3990:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:3990:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4090:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:4090:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4090:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:4090:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4190:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:4190:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4190:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:4190:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4290:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:4290:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4290:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:4290:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4390:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:4390:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4390:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:4390:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4490:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:4490:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4490:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:4490:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4590:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:4590:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4590:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:4590:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4690:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:4690:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:4690:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:4690:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:5190:XCUH1H:
+    default: 0
+    name: BPMS:UNDH:5190:XCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  BPMS:UNDH:5190:YCUH1H:
+    default: 0
+    name: BPMS:UNDH:5190:YCUH1H
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  COLL:LI21:235:LVPOS:
+    default: 0
+    name: COLL:LI21:235:LVPOS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  COLL:LI21:236:LVPOS:
+    default: 0
+    name: COLL:LI21:236:LVPOS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI21:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI21:31:DSTA
+    type: array
+  KLYS:LI21:31:ENLD:
+    default: 205.449
+    name: KLYS:LI21:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:31:HDSC:
+    default: 32.0
+    name: KLYS:LI21:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:31:PHAS:
+    default: -0.14282989501953125
+    name: KLYS:LI21:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:31:STAT:
+    default: 1
+    name: KLYS:LI21:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:31:SWRD:
+    default: 0
+    name: KLYS:LI21:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI21:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI21:41:DSTA
+    type: array
+  KLYS:LI21:41:ENLD:
+    default: 257.928
+    name: KLYS:LI21:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:41:HDSC:
+    default: 32.0
+    name: KLYS:LI21:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:41:PHAS:
+    default: -0.2671051025390625
+    name: KLYS:LI21:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:41:STAT:
+    default: 1
+    name: KLYS:LI21:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:41:SWRD:
+    default: 0
+    name: KLYS:LI21:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI21:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI21:51:DSTA
+    type: array
+  KLYS:LI21:51:ENLD:
+    default: 235.28
+    name: KLYS:LI21:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:51:HDSC:
+    default: 32.0
+    name: KLYS:LI21:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:51:PHAS:
+    default: -0.2979888916015625
+    name: KLYS:LI21:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:51:STAT:
+    default: 1
+    name: KLYS:LI21:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:51:SWRD:
+    default: 0
+    name: KLYS:LI21:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:61:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI21:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:61:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI21:61:DSTA
+    type: array
+  KLYS:LI21:61:ENLD:
+    default: 249.342
+    name: KLYS:LI21:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:61:HDSC:
+    default: 32.0
+    name: KLYS:LI21:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:61:PHAS:
+    default: -0.2623023986816406
+    name: KLYS:LI21:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:61:STAT:
+    default: 1
+    name: KLYS:LI21:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:61:SWRD:
+    default: 0
+    name: KLYS:LI21:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:71:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI21:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI21:71:DSTA
+    type: array
+  KLYS:LI21:71:ENLD:
+    default: 209.882
+    name: KLYS:LI21:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:71:HDSC:
+    default: 32.0
+    name: KLYS:LI21:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:71:PHAS:
+    default: -0.2533721923828125
+    name: KLYS:LI21:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:71:STAT:
+    default: 1
+    name: KLYS:LI21:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:71:SWRD:
+    default: 0
+    name: KLYS:LI21:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:81:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI21:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:81:DSTA:
+    default:
+    - 536870913.0
+    - 528640.0
+    name: KLYS:LI21:81:DSTA
+    type: array
+  KLYS:LI21:81:ENLD:
+    default: 255.378
+    name: KLYS:LI21:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:81:HDSC:
+    default: 32.0
+    name: KLYS:LI21:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:81:PHAS:
+    default: -0.2655143737792969
+    name: KLYS:LI21:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:81:STAT:
+    default: 1
+    name: KLYS:LI21:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI21:81:SWRD:
+    default: 0
+    name: KLYS:LI21:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:11:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI22:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:11:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI22:11:DSTA
+    type: array
+  KLYS:LI22:11:ENLD:
+    default: 228.277
+    name: KLYS:LI22:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:11:HDSC:
+    default: 4128.0
+    name: KLYS:LI22:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:11:PHAS:
+    default: -0.1343994140625
+    name: KLYS:LI22:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:11:STAT:
+    default: 1
+    name: KLYS:LI22:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:11:SWRD:
+    default: 0
+    name: KLYS:LI22:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:21:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI22:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:21:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI22:21:DSTA
+    type: array
+  KLYS:LI22:21:ENLD:
+    default: 247.197
+    name: KLYS:LI22:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:21:HDSC:
+    default: 32.0
+    name: KLYS:LI22:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:21:PHAS:
+    default: -0.506378173828125
+    name: KLYS:LI22:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:21:STAT:
+    default: 1
+    name: KLYS:LI22:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:21:SWRD:
+    default: 0
+    name: KLYS:LI22:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI22:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI22:31:DSTA
+    type: array
+  KLYS:LI22:31:ENLD:
+    default: 239.834
+    name: KLYS:LI22:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:31:HDSC:
+    default: 32.0
+    name: KLYS:LI22:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:31:PHAS:
+    default: -0.3757781982421875
+    name: KLYS:LI22:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:31:STAT:
+    default: 1
+    name: KLYS:LI22:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:31:SWRD:
+    default: 0
+    name: KLYS:LI22:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI22:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI22:41:DSTA
+    type: array
+  KLYS:LI22:41:ENLD:
+    default: 214.555
+    name: KLYS:LI22:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:41:HDSC:
+    default: 32.0
+    name: KLYS:LI22:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:41:PHAS:
+    default: -0.0515899658203125
+    name: KLYS:LI22:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:41:STAT:
+    default: 1
+    name: KLYS:LI22:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:41:SWRD:
+    default: 0
+    name: KLYS:LI22:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI22:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI22:51:DSTA
+    type: array
+  KLYS:LI22:51:ENLD:
+    default: 212.49
+    name: KLYS:LI22:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:51:HDSC:
+    default: 32.0
+    name: KLYS:LI22:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:51:PHAS:
+    default: 0.10418701171875
+    name: KLYS:LI22:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:51:STAT:
+    default: 33
+    name: KLYS:LI22:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:51:SWRD:
+    default: 1024
+    name: KLYS:LI22:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:61:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI22:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:61:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI22:61:DSTA
+    type: array
+  KLYS:LI22:61:ENLD:
+    default: 267.269
+    name: KLYS:LI22:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:61:HDSC:
+    default: 32.0
+    name: KLYS:LI22:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:61:PHAS:
+    default: 0.1130523681640625
+    name: KLYS:LI22:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:61:STAT:
+    default: 33
+    name: KLYS:LI22:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:61:SWRD:
+    default: 32768
+    name: KLYS:LI22:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:71:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI22:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI22:71:DSTA
+    type: array
+  KLYS:LI22:71:ENLD:
+    default: 247.806
+    name: KLYS:LI22:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:71:HDSC:
+    default: 32.0
+    name: KLYS:LI22:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:71:PHAS:
+    default: -0.05754852294921875
+    name: KLYS:LI22:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:71:STAT:
+    default: 1
+    name: KLYS:LI22:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:71:SWRD:
+    default: 0
+    name: KLYS:LI22:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:81:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI22:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:81:DSTA:
+    default:
+    - 536870913.0
+    - 528640.0
+    name: KLYS:LI22:81:DSTA
+    type: array
+  KLYS:LI22:81:ENLD:
+    default: 257.689
+    name: KLYS:LI22:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:81:HDSC:
+    default: 32.0
+    name: KLYS:LI22:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:81:PHAS:
+    default: -0.1834259033203125
+    name: KLYS:LI22:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:81:STAT:
+    default: 1
+    name: KLYS:LI22:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI22:81:SWRD:
+    default: 0
+    name: KLYS:LI22:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:11:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI23:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:11:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:11:DSTA
+    type: array
+  KLYS:LI23:11:ENLD:
+    default: 257.825
+    name: KLYS:LI23:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:11:HDSC:
+    default: 32.0
+    name: KLYS:LI23:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:11:PHAS:
+    default: -0.5968475341796875
+    name: KLYS:LI23:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:11:STAT:
+    default: 33
+    name: KLYS:LI23:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:11:SWRD:
+    default: 32768
+    name: KLYS:LI23:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:21:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI23:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:21:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:21:DSTA
+    type: array
+  KLYS:LI23:21:ENLD:
+    default: 202.2
+    name: KLYS:LI23:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:21:HDSC:
+    default: 32.0
+    name: KLYS:LI23:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:21:PHAS:
+    default: -0.277801513671875
+    name: KLYS:LI23:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:21:STAT:
+    default: 33
+    name: KLYS:LI23:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:21:SWRD:
+    default: 1024
+    name: KLYS:LI23:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI23:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:31:DSTA
+    type: array
+  KLYS:LI23:31:ENLD:
+    default: 181.654
+    name: KLYS:LI23:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:31:HDSC:
+    default: 32.0
+    name: KLYS:LI23:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:31:PHAS:
+    default: -0.63494873046875
+    name: KLYS:LI23:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:31:STAT:
+    default: 1
+    name: KLYS:LI23:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:31:SWRD:
+    default: 512
+    name: KLYS:LI23:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI23:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:41:DSTA
+    type: array
+  KLYS:LI23:41:ENLD:
+    default: 201.073
+    name: KLYS:LI23:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:41:HDSC:
+    default: 32.0
+    name: KLYS:LI23:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:41:PHAS:
+    default: -0.32421875
+    name: KLYS:LI23:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:41:STAT:
+    default: 1
+    name: KLYS:LI23:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:41:SWRD:
+    default: 0
+    name: KLYS:LI23:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI23:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:51:DSTA
+    type: array
+  KLYS:LI23:51:ENLD:
+    default: 237.211
+    name: KLYS:LI23:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:51:HDSC:
+    default: 32.0
+    name: KLYS:LI23:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:51:PHAS:
+    default: -1.3285622596740723
+    name: KLYS:LI23:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:51:STAT:
+    default: 545
+    name: KLYS:LI23:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:51:SWRD:
+    default: 576
+    name: KLYS:LI23:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:61:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI23:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:61:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:61:DSTA
+    type: array
+  KLYS:LI23:61:ENLD:
+    default: 257.289
+    name: KLYS:LI23:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:61:HDSC:
+    default: 32.0
+    name: KLYS:LI23:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:61:PHAS:
+    default: -0.4113883972167969
+    name: KLYS:LI23:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:61:STAT:
+    default: 1
+    name: KLYS:LI23:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:61:SWRD:
+    default: 0
+    name: KLYS:LI23:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:71:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI23:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:71:DSTA
+    type: array
+  KLYS:LI23:71:ENLD:
+    default: 255.295
+    name: KLYS:LI23:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:71:HDSC:
+    default: 32.0
+    name: KLYS:LI23:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:71:PHAS:
+    default: -1.021484375
+    name: KLYS:LI23:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:71:STAT:
+    default: 513
+    name: KLYS:LI23:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:71:SWRD:
+    default: 512
+    name: KLYS:LI23:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:81:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI23:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:81:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI23:81:DSTA
+    type: array
+  KLYS:LI23:81:ENLD:
+    default: 253.042
+    name: KLYS:LI23:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:81:HDSC:
+    default: 32.0
+    name: KLYS:LI23:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:81:PHAS:
+    default: -0.5722360610961914
+    name: KLYS:LI23:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:81:STAT:
+    default: 1
+    name: KLYS:LI23:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI23:81:SWRD:
+    default: 0
+    name: KLYS:LI23:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:11:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI24:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:11:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI24:11:DSTA
+    type: array
+  KLYS:LI24:11:ENLD:
+    default: 225.015
+    name: KLYS:LI24:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:11:HDSC:
+    default: 1.0
+    name: KLYS:LI24:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:11:STAT:
+    default: 1
+    name: KLYS:LI24:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:11:SWRD:
+    default: 0
+    name: KLYS:LI24:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:21:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI24:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:21:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI24:21:DSTA
+    type: array
+  KLYS:LI24:21:ENLD:
+    default: 203.452
+    name: KLYS:LI24:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:21:HDSC:
+    default: 1.0
+    name: KLYS:LI24:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:21:STAT:
+    default: 33
+    name: KLYS:LI24:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:21:SWRD:
+    default: 32864
+    name: KLYS:LI24:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI24:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI24:31:DSTA
+    type: array
+  KLYS:LI24:31:ENLD:
+    default: 236.729
+    name: KLYS:LI24:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:31:HDSC:
+    default: 33.0
+    name: KLYS:LI24:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:31:STAT:
+    default: 1
+    name: KLYS:LI24:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:31:SWRD:
+    default: 0
+    name: KLYS:LI24:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI24:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI24:41:DSTA
+    type: array
+  KLYS:LI24:41:ENLD:
+    default: 233.704
+    name: KLYS:LI24:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:41:HDSC:
+    default: 32.0
+    name: KLYS:LI24:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:41:PHAS:
+    default: -0.198150634765625
+    name: KLYS:LI24:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:41:STAT:
+    default: 1
+    name: KLYS:LI24:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:41:SWRD:
+    default: 0
+    name: KLYS:LI24:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI24:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI24:51:DSTA
+    type: array
+  KLYS:LI24:51:ENLD:
+    default: 245.721
+    name: KLYS:LI24:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:51:HDSC:
+    default: 32.0
+    name: KLYS:LI24:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:51:PHAS:
+    default: -0.41778564453125
+    name: KLYS:LI24:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:51:STAT:
+    default: 1
+    name: KLYS:LI24:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:51:SWRD:
+    default: 0
+    name: KLYS:LI24:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:61:BEAMCODE1_STAT:
+    default: 4.0
+    name: KLYS:LI24:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:61:DSTA:
+    default:
+    - 1073741953.0
+    - 5120.0
+    name: KLYS:LI24:61:DSTA
+    type: array
+  KLYS:LI24:61:ENLD:
+    default: 254.794
+    name: KLYS:LI24:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:61:HDSC:
+    default: 34.0
+    name: KLYS:LI24:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:61:PHAS:
+    default: 0
+    name: KLYS:LI24:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:61:STAT:
+    default: 554
+    name: KLYS:LI24:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI24:61:SWRD:
+    default: 33576
+    name: KLYS:LI24:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:11:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:11:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:11:DSTA
+    type: array
+  KLYS:LI25:11:ENLD:
+    default: 192.602
+    name: KLYS:LI25:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:11:HDSC:
+    default: 33.0
+    name: KLYS:LI25:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:11:PHAS:
+    default: 1.8173828125
+    name: KLYS:LI25:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:11:STAT:
+    default: 513
+    name: KLYS:LI25:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:11:SWRD:
+    default: 512
+    name: KLYS:LI25:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:21:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:21:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:21:DSTA
+    type: array
+  KLYS:LI25:21:ENLD:
+    default: 217.419
+    name: KLYS:LI25:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:21:HDSC:
+    default: 33.0
+    name: KLYS:LI25:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:21:PHAS:
+    default: 4.32177734375
+    name: KLYS:LI25:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:21:STAT:
+    default: 1
+    name: KLYS:LI25:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:21:SWRD:
+    default: 512
+    name: KLYS:LI25:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:31:DSTA
+    type: array
+  KLYS:LI25:31:ENLD:
+    default: 219.995
+    name: KLYS:LI25:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:31:HDSC:
+    default: 32.0
+    name: KLYS:LI25:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:31:PHAS:
+    default: -0.5502700805664062
+    name: KLYS:LI25:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:31:STAT:
+    default: 1
+    name: KLYS:LI25:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:31:SWRD:
+    default: 0
+    name: KLYS:LI25:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:41:DSTA
+    type: array
+  KLYS:LI25:41:ENLD:
+    default: 250.059
+    name: KLYS:LI25:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:41:HDSC:
+    default: 32.0
+    name: KLYS:LI25:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:41:PHAS:
+    default: -0.8387641906738281
+    name: KLYS:LI25:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:41:STAT:
+    default: 1
+    name: KLYS:LI25:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:41:SWRD:
+    default: 0
+    name: KLYS:LI25:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:51:DSTA
+    type: array
+  KLYS:LI25:51:ENLD:
+    default: 227.01
+    name: KLYS:LI25:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:51:HDSC:
+    default: 32.0
+    name: KLYS:LI25:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:51:PHAS:
+    default: -0.3831024169921875
+    name: KLYS:LI25:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:51:STAT:
+    default: 1
+    name: KLYS:LI25:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:51:SWRD:
+    default: 0
+    name: KLYS:LI25:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:61:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:61:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:61:DSTA
+    type: array
+  KLYS:LI25:61:ENLD:
+    default: 208.555
+    name: KLYS:LI25:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:61:HDSC:
+    default: 32.0
+    name: KLYS:LI25:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:61:PHAS:
+    default: -0.3386688232421875
+    name: KLYS:LI25:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:61:STAT:
+    default: 1
+    name: KLYS:LI25:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:61:SWRD:
+    default: 0
+    name: KLYS:LI25:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:71:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:71:DSTA
+    type: array
+  KLYS:LI25:71:ENLD:
+    default: 231.138
+    name: KLYS:LI25:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:71:HDSC:
+    default: 32.0
+    name: KLYS:LI25:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:71:PHAS:
+    default: -0.48146820068359375
+    name: KLYS:LI25:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:71:STAT:
+    default: 1
+    name: KLYS:LI25:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:71:SWRD:
+    default: 0
+    name: KLYS:LI25:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:81:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI25:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:81:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI25:81:DSTA
+    type: array
+  KLYS:LI25:81:ENLD:
+    default: 191.665
+    name: KLYS:LI25:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:81:HDSC:
+    default: 32.0
+    name: KLYS:LI25:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:81:PHAS:
+    default: -0.6354141235351562
+    name: KLYS:LI25:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:81:STAT:
+    default: 1
+    name: KLYS:LI25:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI25:81:SWRD:
+    default: 0
+    name: KLYS:LI25:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:11:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI26:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:11:DSTA:
+    default:
+    - 536870913.0
+    - 528640.0
+    name: KLYS:LI26:11:DSTA
+    type: array
+  KLYS:LI26:11:ENLD:
+    default: 239.422
+    name: KLYS:LI26:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:11:HDSC:
+    default: 32.0
+    name: KLYS:LI26:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:11:PHAS:
+    default: -0.16296005249023438
+    name: KLYS:LI26:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:11:STAT:
+    default: 1
+    name: KLYS:LI26:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:11:SWRD:
+    default: 0
+    name: KLYS:LI26:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:21:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI26:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:21:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI26:21:DSTA
+    type: array
+  KLYS:LI26:21:ENLD:
+    default: 229.578
+    name: KLYS:LI26:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:21:HDSC:
+    default: 32.0
+    name: KLYS:LI26:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:21:PHAS:
+    default: 0.3724212646484375
+    name: KLYS:LI26:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:21:STAT:
+    default: 1
+    name: KLYS:LI26:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:21:SWRD:
+    default: 0
+    name: KLYS:LI26:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:31:DSTA:
+    default:
+    - 1.0
+    - 147456.0
+    name: KLYS:LI26:31:DSTA
+    type: array
+  KLYS:LI26:31:ENLD:
+    default: 240.0
+    name: KLYS:LI26:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:31:HDSC:
+    default: 35.0
+    name: KLYS:LI26:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:31:PHAS:
+    default: 110.92010173269063
+    name: KLYS:LI26:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:31:STAT:
+    default: 514
+    name: KLYS:LI26:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:31:SWRD:
+    default: 34346
+    name: KLYS:LI26:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI26:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI26:41:DSTA
+    type: array
+  KLYS:LI26:41:ENLD:
+    default: 203.627
+    name: KLYS:LI26:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:41:HDSC:
+    default: 32.0
+    name: KLYS:LI26:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:41:PHAS:
+    default: 0.0861358642578125
+    name: KLYS:LI26:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:41:STAT:
+    default: 1
+    name: KLYS:LI26:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:41:SWRD:
+    default: 0
+    name: KLYS:LI26:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI26:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI26:51:DSTA
+    type: array
+  KLYS:LI26:51:ENLD:
+    default: 245.163
+    name: KLYS:LI26:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:51:HDSC:
+    default: 32.0
+    name: KLYS:LI26:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:51:PHAS:
+    default: 0.29592132568359375
+    name: KLYS:LI26:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:51:STAT:
+    default: 1
+    name: KLYS:LI26:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:51:SWRD:
+    default: 0
+    name: KLYS:LI26:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:61:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI26:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:61:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI26:61:DSTA
+    type: array
+  KLYS:LI26:61:ENLD:
+    default: 233.579
+    name: KLYS:LI26:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:61:HDSC:
+    default: 32.0
+    name: KLYS:LI26:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:61:PHAS:
+    default: -0.0192413330078125
+    name: KLYS:LI26:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:61:STAT:
+    default: 1
+    name: KLYS:LI26:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:61:SWRD:
+    default: 0
+    name: KLYS:LI26:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:71:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI26:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI26:71:DSTA
+    type: array
+  KLYS:LI26:71:ENLD:
+    default: 259.232
+    name: KLYS:LI26:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:71:HDSC:
+    default: 32.0
+    name: KLYS:LI26:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:71:PHAS:
+    default: -0.10962295532226562
+    name: KLYS:LI26:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:71:STAT:
+    default: 1
+    name: KLYS:LI26:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:71:SWRD:
+    default: 0
+    name: KLYS:LI26:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:81:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI26:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:81:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI26:81:DSTA
+    type: array
+  KLYS:LI26:81:ENLD:
+    default: 219.159
+    name: KLYS:LI26:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:81:HDSC:
+    default: 32.0
+    name: KLYS:LI26:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:81:PHAS:
+    default: -0.2601318359375
+    name: KLYS:LI26:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:81:STAT:
+    default: 1
+    name: KLYS:LI26:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI26:81:SWRD:
+    default: 0
+    name: KLYS:LI26:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:11:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI27:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:11:DSTA:
+    default:
+    - 536870913.0
+    - 528640.0
+    name: KLYS:LI27:11:DSTA
+    type: array
+  KLYS:LI27:11:ENLD:
+    default: 216.773
+    name: KLYS:LI27:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:11:HDSC:
+    default: 4128.0
+    name: KLYS:LI27:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:11:PHAS:
+    default: -0.13376617431640625
+    name: KLYS:LI27:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:11:STAT:
+    default: 1
+    name: KLYS:LI27:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:11:SWRD:
+    default: 0
+    name: KLYS:LI27:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:21:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI27:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:21:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI27:21:DSTA
+    type: array
+  KLYS:LI27:21:ENLD:
+    default: 228.754
+    name: KLYS:LI27:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:21:HDSC:
+    default: 32.0
+    name: KLYS:LI27:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:21:PHAS:
+    default: 0
+    name: KLYS:LI27:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:21:STAT:
+    default: 552
+    name: KLYS:LI27:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:21:SWRD:
+    default: 34560
+    name: KLYS:LI27:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI27:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI27:31:DSTA
+    type: array
+  KLYS:LI27:31:ENLD:
+    default: 236.17
+    name: KLYS:LI27:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:31:HDSC:
+    default: 32.0
+    name: KLYS:LI27:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:31:PHAS:
+    default: -0.27733612060546875
+    name: KLYS:LI27:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:31:STAT:
+    default: 1
+    name: KLYS:LI27:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:31:SWRD:
+    default: 0
+    name: KLYS:LI27:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI27:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI27:41:DSTA
+    type: array
+  KLYS:LI27:41:ENLD:
+    default: 263.235
+    name: KLYS:LI27:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:41:HDSC:
+    default: 32.0
+    name: KLYS:LI27:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:41:PHAS:
+    default: 0.013336181640625
+    name: KLYS:LI27:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:41:STAT:
+    default: 1
+    name: KLYS:LI27:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:41:SWRD:
+    default: 0
+    name: KLYS:LI27:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI27:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI27:51:DSTA
+    type: array
+  KLYS:LI27:51:ENLD:
+    default: 267.673
+    name: KLYS:LI27:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:51:HDSC:
+    default: 32.0
+    name: KLYS:LI27:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:51:PHAS:
+    default: 0.24298858642578125
+    name: KLYS:LI27:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:51:STAT:
+    default: 1
+    name: KLYS:LI27:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:51:SWRD:
+    default: 0
+    name: KLYS:LI27:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:61:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI27:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:61:DSTA:
+    default:
+    - 536870913.0
+    - 528640.0
+    name: KLYS:LI27:61:DSTA
+    type: array
+  KLYS:LI27:61:ENLD:
+    default: 153.782
+    name: KLYS:LI27:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:61:HDSC:
+    default: 32.0
+    name: KLYS:LI27:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:61:PHAS:
+    default: 0.0582275390625
+    name: KLYS:LI27:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:61:STAT:
+    default: 33
+    name: KLYS:LI27:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:61:SWRD:
+    default: 32768
+    name: KLYS:LI27:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:71:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI27:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI27:71:DSTA
+    type: array
+  KLYS:LI27:71:ENLD:
+    default: 249.432
+    name: KLYS:LI27:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:71:HDSC:
+    default: 33.0
+    name: KLYS:LI27:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:71:PHAS:
+    default: -5.636566162109375
+    name: KLYS:LI27:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:71:STAT:
+    default: 545
+    name: KLYS:LI27:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:71:SWRD:
+    default: 33280
+    name: KLYS:LI27:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:81:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI27:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:81:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI27:81:DSTA
+    type: array
+  KLYS:LI27:81:ENLD:
+    default: 262.045
+    name: KLYS:LI27:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:81:HDSC:
+    default: 32.0
+    name: KLYS:LI27:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:81:PHAS:
+    default: 0.162811279296875
+    name: KLYS:LI27:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:81:STAT:
+    default: 33
+    name: KLYS:LI27:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI27:81:SWRD:
+    default: 32768
+    name: KLYS:LI27:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:11:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:11:DSTA:
+    default:
+    - 1073741953.0
+    - 24576.0
+    name: KLYS:LI28:11:DSTA
+    type: array
+  KLYS:LI28:11:ENLD:
+    default: 175.064
+    name: KLYS:LI28:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:11:HDSC:
+    default: 32.0
+    name: KLYS:LI28:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:11:PHAS:
+    default: 0
+    name: KLYS:LI28:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:11:STAT:
+    default: 552
+    name: KLYS:LI28:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:11:SWRD:
+    default: 33576
+    name: KLYS:LI28:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:21:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:21:DSTA:
+    default:
+    - 1610612865.0
+    - 24576.0
+    name: KLYS:LI28:21:DSTA
+    type: array
+  KLYS:LI28:21:ENLD:
+    default: 208.385
+    name: KLYS:LI28:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:21:HDSC:
+    default: 32.0
+    name: KLYS:LI28:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:21:PHAS:
+    default: 0
+    name: KLYS:LI28:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:21:STAT:
+    default: 552
+    name: KLYS:LI28:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:21:SWRD:
+    default: 33576
+    name: KLYS:LI28:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:31:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:31:DSTA:
+    default:
+    - 1073741953.0
+    - 24576.0
+    name: KLYS:LI28:31:DSTA
+    type: array
+  KLYS:LI28:31:ENLD:
+    default: 261.641
+    name: KLYS:LI28:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:31:HDSC:
+    default: 32.0
+    name: KLYS:LI28:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:31:PHAS:
+    default: 0
+    name: KLYS:LI28:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:31:STAT:
+    default: 552
+    name: KLYS:LI28:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:31:SWRD:
+    default: 33576
+    name: KLYS:LI28:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:41:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:41:DSTA:
+    default:
+    - 1073741953.0
+    - 24576.0
+    name: KLYS:LI28:41:DSTA
+    type: array
+  KLYS:LI28:41:ENLD:
+    default: 223.079
+    name: KLYS:LI28:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:41:HDSC:
+    default: 32.0
+    name: KLYS:LI28:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:41:PHAS:
+    default: 0
+    name: KLYS:LI28:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:41:STAT:
+    default: 552
+    name: KLYS:LI28:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:41:SWRD:
+    default: 34600
+    name: KLYS:LI28:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:51:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:51:DSTA:
+    default:
+    - 1073741953.0
+    - 24576.0
+    name: KLYS:LI28:51:DSTA
+    type: array
+  KLYS:LI28:51:ENLD:
+    default: 219.485
+    name: KLYS:LI28:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:51:HDSC:
+    default: 288.0
+    name: KLYS:LI28:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:51:PHAS:
+    default: 0
+    name: KLYS:LI28:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:51:STAT:
+    default: 552
+    name: KLYS:LI28:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:51:SWRD:
+    default: 33576
+    name: KLYS:LI28:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:61:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:61:DSTA:
+    default:
+    - 1073741953.0
+    - 24576.0
+    name: KLYS:LI28:61:DSTA
+    type: array
+  KLYS:LI28:61:ENLD:
+    default: 219.21
+    name: KLYS:LI28:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:61:HDSC:
+    default: 32.0
+    name: KLYS:LI28:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:61:PHAS:
+    default: 0
+    name: KLYS:LI28:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:61:STAT:
+    default: 552
+    name: KLYS:LI28:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:61:SWRD:
+    default: 34600
+    name: KLYS:LI28:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:71:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:71:DSTA:
+    default:
+    - 129.0
+    - 24576.0
+    name: KLYS:LI28:71:DSTA
+    type: array
+  KLYS:LI28:71:ENLD:
+    default: 214.581
+    name: KLYS:LI28:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:71:HDSC:
+    default: 32.0
+    name: KLYS:LI28:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:71:PHAS:
+    default: 0
+    name: KLYS:LI28:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:71:STAT:
+    default: 552
+    name: KLYS:LI28:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:71:SWRD:
+    default: 33576
+    name: KLYS:LI28:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:81:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI28:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:81:DSTA:
+    default:
+    - 1073741953.0
+    - 24576.0
+    name: KLYS:LI28:81:DSTA
+    type: array
+  KLYS:LI28:81:ENLD:
+    default: 231.011
+    name: KLYS:LI28:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:81:HDSC:
+    default: 32.0
+    name: KLYS:LI28:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:81:PHAS:
+    default: 0
+    name: KLYS:LI28:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:81:STAT:
+    default: 552
+    name: KLYS:LI28:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI28:81:SWRD:
+    default: 33576
+    name: KLYS:LI28:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:11:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI29:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:11:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI29:11:DSTA
+    type: array
+  KLYS:LI29:11:ENLD:
+    default: 197.342
+    name: KLYS:LI29:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:11:HDSC:
+    default: 32.0
+    name: KLYS:LI29:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:11:PHAS:
+    default: 0.1053924560546875
+    name: KLYS:LI29:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:11:STAT:
+    default: 1
+    name: KLYS:LI29:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:11:SWRD:
+    default: 0
+    name: KLYS:LI29:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:21:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI29:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:21:DSTA:
+    default:
+    - 536870913.0
+    - 528640.0
+    name: KLYS:LI29:21:DSTA
+    type: array
+  KLYS:LI29:21:ENLD:
+    default: 231.267
+    name: KLYS:LI29:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:21:HDSC:
+    default: 32.0
+    name: KLYS:LI29:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:21:PHAS:
+    default: -0.06707382202148438
+    name: KLYS:LI29:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:21:STAT:
+    default: 1
+    name: KLYS:LI29:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:21:SWRD:
+    default: 0
+    name: KLYS:LI29:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI29:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI29:31:DSTA
+    type: array
+  KLYS:LI29:31:ENLD:
+    default: 207.776
+    name: KLYS:LI29:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:31:HDSC:
+    default: 32.0
+    name: KLYS:LI29:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:31:PHAS:
+    default: 0.01666259765625
+    name: KLYS:LI29:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:31:STAT:
+    default: 1
+    name: KLYS:LI29:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:31:SWRD:
+    default: 0
+    name: KLYS:LI29:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI29:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI29:41:DSTA
+    type: array
+  KLYS:LI29:41:ENLD:
+    default: 168.719
+    name: KLYS:LI29:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:41:HDSC:
+    default: 32.0
+    name: KLYS:LI29:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:41:PHAS:
+    default: -0.20476913452148438
+    name: KLYS:LI29:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:41:STAT:
+    default: 1
+    name: KLYS:LI29:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:41:SWRD:
+    default: 0
+    name: KLYS:LI29:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI29:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:51:DSTA:
+    default:
+    - 536870913.0
+    - 528640.0
+    name: KLYS:LI29:51:DSTA
+    type: array
+  KLYS:LI29:51:ENLD:
+    default: 255.548
+    name: KLYS:LI29:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:51:HDSC:
+    default: 32.0
+    name: KLYS:LI29:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:51:PHAS:
+    default: 0.28469085693359375
+    name: KLYS:LI29:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:51:STAT:
+    default: 1
+    name: KLYS:LI29:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:51:SWRD:
+    default: 0
+    name: KLYS:LI29:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:61:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI29:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:61:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI29:61:DSTA
+    type: array
+  KLYS:LI29:61:ENLD:
+    default: 261.488
+    name: KLYS:LI29:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:61:HDSC:
+    default: 32.0
+    name: KLYS:LI29:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:61:PHAS:
+    default: -0.07125091552734375
+    name: KLYS:LI29:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:61:STAT:
+    default: 1
+    name: KLYS:LI29:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:61:SWRD:
+    default: 0
+    name: KLYS:LI29:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:71:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI29:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI29:71:DSTA
+    type: array
+  KLYS:LI29:71:ENLD:
+    default: 266.558
+    name: KLYS:LI29:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:71:HDSC:
+    default: 32.0
+    name: KLYS:LI29:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:71:PHAS:
+    default: -0.45830535888671875
+    name: KLYS:LI29:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:71:STAT:
+    default: 33
+    name: KLYS:LI29:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:71:SWRD:
+    default: 32768
+    name: KLYS:LI29:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:81:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI29:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:81:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI29:81:DSTA
+    type: array
+  KLYS:LI29:81:ENLD:
+    default: 217.245
+    name: KLYS:LI29:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:81:HDSC:
+    default: 32.0
+    name: KLYS:LI29:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:81:PHAS:
+    default: -0.2165679931640625
+    name: KLYS:LI29:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:81:STAT:
+    default: 33
+    name: KLYS:LI29:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI29:81:SWRD:
+    default: 32768
+    name: KLYS:LI29:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:11:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI30:11:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:11:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI30:11:DSTA
+    type: array
+  KLYS:LI30:11:ENLD:
+    default: 188.02
+    name: KLYS:LI30:11:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:11:HDSC:
+    default: 32.0
+    name: KLYS:LI30:11:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:11:PHAS:
+    default: -0.3077545166015625
+    name: KLYS:LI30:11:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:11:STAT:
+    default: 1
+    name: KLYS:LI30:11:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:11:SWRD:
+    default: 0
+    name: KLYS:LI30:11:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:21:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI30:21:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:21:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI30:21:DSTA
+    type: array
+  KLYS:LI30:21:ENLD:
+    default: 181.625
+    name: KLYS:LI30:21:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:21:HDSC:
+    default: 32.0
+    name: KLYS:LI30:21:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:21:PHAS:
+    default: -0.2800140380859375
+    name: KLYS:LI30:21:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:21:STAT:
+    default: 1
+    name: KLYS:LI30:21:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:21:SWRD:
+    default: 0
+    name: KLYS:LI30:21:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:31:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI30:31:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:31:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI30:31:DSTA
+    type: array
+  KLYS:LI30:31:ENLD:
+    default: 230.027
+    name: KLYS:LI30:31:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:31:HDSC:
+    default: 4128.0
+    name: KLYS:LI30:31:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:31:PHAS:
+    default: 0.09761810302734375
+    name: KLYS:LI30:31:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:31:STAT:
+    default: 1
+    name: KLYS:LI30:31:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:31:SWRD:
+    default: 0
+    name: KLYS:LI30:31:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:41:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI30:41:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:41:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI30:41:DSTA
+    type: array
+  KLYS:LI30:41:ENLD:
+    default: 198.968
+    name: KLYS:LI30:41:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:41:HDSC:
+    default: 32.0
+    name: KLYS:LI30:41:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:41:PHAS:
+    default: -0.38831329345703125
+    name: KLYS:LI30:41:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:41:STAT:
+    default: 1
+    name: KLYS:LI30:41:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:41:SWRD:
+    default: 0
+    name: KLYS:LI30:41:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:51:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI30:51:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:51:DSTA:
+    default:
+    - 1610612737.0
+    - 528644.0
+    name: KLYS:LI30:51:DSTA
+    type: array
+  KLYS:LI30:51:ENLD:
+    default: 202.461
+    name: KLYS:LI30:51:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:51:HDSC:
+    default: 32.0
+    name: KLYS:LI30:51:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:51:PHAS:
+    default: -0.578887939453125
+    name: KLYS:LI30:51:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:51:STAT:
+    default: 1
+    name: KLYS:LI30:51:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:51:SWRD:
+    default: 0
+    name: KLYS:LI30:51:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:61:BEAMCODE1_STAT:
+    default: 1.0
+    name: KLYS:LI30:61:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:61:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI30:61:DSTA
+    type: array
+  KLYS:LI30:61:ENLD:
+    default: 232.966
+    name: KLYS:LI30:61:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:61:HDSC:
+    default: 32.0
+    name: KLYS:LI30:61:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:61:PHAS:
+    default: -0.50347900390625
+    name: KLYS:LI30:61:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:61:STAT:
+    default: 1
+    name: KLYS:LI30:61:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:61:SWRD:
+    default: 0
+    name: KLYS:LI30:61:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:71:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI30:71:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:71:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI30:71:DSTA
+    type: array
+  KLYS:LI30:71:ENLD:
+    default: 222.62
+    name: KLYS:LI30:71:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:71:HDSC:
+    default: 32.0
+    name: KLYS:LI30:71:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:71:PHAS:
+    default: -0.3458709716796875
+    name: KLYS:LI30:71:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:71:STAT:
+    default: 33
+    name: KLYS:LI30:71:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:71:SWRD:
+    default: 32768
+    name: KLYS:LI30:71:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:81:BEAMCODE1_STAT:
+    default: 2.0
+    name: KLYS:LI30:81:BEAMCODE1_STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:81:DSTA:
+    default:
+    - 1610612737.0
+    - 528640.0
+    name: KLYS:LI30:81:DSTA
+    type: array
+  KLYS:LI30:81:ENLD:
+    default: 183.424
+    name: KLYS:LI30:81:ENLD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:81:HDSC:
+    default: 32.0
+    name: KLYS:LI30:81:HDSC
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:81:PHAS:
+    default: -0.3539276123046875
+    name: KLYS:LI30:81:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:81:STAT:
+    default: 33
+    name: KLYS:LI30:81:STAT
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  KLYS:LI30:81:SWRD:
+    default: 32768
+    name: KLYS:LI30:81:SWRD
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:BSYH:445:BDES:
+    default: 40.4566471
+    name: QUAD:BSYH:445:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:BSYH:465:BDES:
+    default: -37.1046498
+    name: QUAD:BSYH:465:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:BSYH:640:BDES:
+    default: 28.0249751
+    name: QUAD:BSYH:640:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:BSYH:735:BDES:
+    default: -19.20692
+    name: QUAD:BSYH:735:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:BSYH:910:BDES:
+    default: 18.4697212
+    name: QUAD:BSYH:910:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:CLTH:140:BDES:
+    default: -22.3393886
+    name: QUAD:CLTH:140:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:CLTH:170:BDES:
+    default: 12.1447582
+    name: QUAD:CLTH:170:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:DMPH:300:BDES:
+    default: 32.5396227
+    name: QUAD:DMPH:300:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:DMPH:380:BDES:
+    default: -25.5604362
+    name: QUAD:DMPH:380:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:DMPH:500:BDES:
+    default: -24.4888121
+    name: QUAD:DMPH:500:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:DMPH:600:BDES:
+    default: -24.494335282794065
+    name: QUAD:DMPH:600:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:IN20:631:BDES:
+    default: 7.4386
+    name: QUAD:IN20:631:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:IN20:651:BDES:
+    default: -5.8524
+    name: QUAD:IN20:651:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:IN20:731:BDES:
+    default: 10.7009
+    name: QUAD:IN20:731:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:IN20:771:BDES:
+    default: -4.0149
+    name: QUAD:IN20:771:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:IN20:781:BDES:
+    default: 6.6312
+    name: QUAD:IN20:781:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:131:BDES:
+    default: -2.4192686
+    name: QUAD:LI21:131:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:161:BDES:
+    default: 1.3905432
+    name: QUAD:LI21:161:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:201:BDES:
+    default: -3.3226905
+    name: QUAD:LI21:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:211:BDES:
+    default: 4.2315152
+    name: QUAD:LI21:211:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:221:BDES:
+    default: -0.0204323
+    name: QUAD:LI21:221:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:243:BDES:
+    default: 0.0
+    name: QUAD:LI21:243:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:251:BDES:
+    default: -0.2459959
+    name: QUAD:LI21:251:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:271:BDES:
+    default: -6.1242668
+    name: QUAD:LI21:271:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:278:BDES:
+    default: 8.8344612
+    name: QUAD:LI21:278:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:301:BDES:
+    default: 0.0
+    name: QUAD:LI21:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:315:BDES:
+    default: 5.5008
+    name: QUAD:LI21:315:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:335:BDES:
+    default: -5.47263
+    name: QUAD:LI21:335:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:401:BDES:
+    default: 1.4158899
+    name: QUAD:LI21:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:501:BDES:
+    default: -1.7363985
+    name: QUAD:LI21:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:601:BDES:
+    default: 1.9774731
+    name: QUAD:LI21:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:701:BDES:
+    default: -2.4848524
+    name: QUAD:LI21:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:801:BDES:
+    default: 2.9871757
+    name: QUAD:LI21:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI21:901:BDES:
+    default: -3.4952038
+    name: QUAD:LI21:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:201:BDES:
+    default: 3.9280372
+    name: QUAD:LI22:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:301:BDES:
+    default: -4.7310785
+    name: QUAD:LI22:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:401:BDES:
+    default: 4.8853249
+    name: QUAD:LI22:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:501:BDES:
+    default: -5.3220264
+    name: QUAD:LI22:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:601:BDES:
+    default: 5.7544991
+    name: QUAD:LI22:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:701:BDES:
+    default: -5.7561057
+    name: QUAD:LI22:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:801:BDES:
+    default: 6.6064689
+    name: QUAD:LI22:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI22:901:BDES:
+    default: -6.7998378
+    name: QUAD:LI22:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:201:BDES:
+    default: 6.9045045
+    name: QUAD:LI23:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:301:BDES:
+    default: -7.5370051
+    name: QUAD:LI23:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:401:BDES:
+    default: 7.5665829
+    name: QUAD:LI23:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:501:BDES:
+    default: -7.9749062
+    name: QUAD:LI23:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:601:BDES:
+    default: 8.4575266
+    name: QUAD:LI23:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:701:BDES:
+    default: -8.9809999
+    name: QUAD:LI23:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:801:BDES:
+    default: 10.3356445
+    name: QUAD:LI23:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI23:901:BDES:
+    default: -10.2762865
+    name: QUAD:LI23:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:201:BDES:
+    default: 11.4592079
+    name: QUAD:LI24:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:301:BDES:
+    default: -12.4192895
+    name: QUAD:LI24:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:401:BDES:
+    default: 15.0373701
+    name: QUAD:LI24:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:501:BDES:
+    default: -14.6190308
+    name: QUAD:LI24:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:601:BDES:
+    default: 9.7490759
+    name: QUAD:LI24:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:701:BDES:
+    default: -20.9546037
+    name: QUAD:LI24:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:702:BDES:
+    default: -20.9546037
+    name: QUAD:LI24:702:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:713:BDES:
+    default: 35.4159609
+    name: QUAD:LI24:713:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:740:BDES:
+    default: -0.0621288
+    name: QUAD:LI24:740:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:860:BDES:
+    default: 1.35389
+    name: QUAD:LI24:860:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:892:BDES:
+    default: -40.7820027
+    name: QUAD:LI24:892:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:901:BDES:
+    default: 17.3368662
+    name: QUAD:LI24:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI24:902:BDES:
+    default: 17.3368662
+    name: QUAD:LI24:902:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:201:BDES:
+    default: 11.6627176
+    name: QUAD:LI25:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:301:BDES:
+    default: -8.3761879
+    name: QUAD:LI25:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:401:BDES:
+    default: 7.8315294
+    name: QUAD:LI25:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:501:BDES:
+    default: -7.6395899
+    name: QUAD:LI25:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:601:BDES:
+    default: 7.8673843
+    name: QUAD:LI25:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:701:BDES:
+    default: -8.1510318
+    name: QUAD:LI25:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:801:BDES:
+    default: 8.7228614
+    name: QUAD:LI25:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI25:901:BDES:
+    default: -8.5782282
+    name: QUAD:LI25:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:201:BDES:
+    default: 9.62070661692957
+    name: QUAD:LI26:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:301:BDES:
+    default: -2.0922997171108886
+    name: QUAD:LI26:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:401:BDES:
+    default: 9.452819929777739
+    name: QUAD:LI26:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:501:BDES:
+    default: -11.681541758977696
+    name: QUAD:LI26:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:601:BDES:
+    default: 16.694643736235
+    name: QUAD:LI26:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:701:BDES:
+    default: -16.002184786335967
+    name: QUAD:LI26:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:801:BDES:
+    default: 17.2831623
+    name: QUAD:LI26:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI26:901:BDES:
+    default: -10.9743914
+    name: QUAD:LI26:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:201:BDES:
+    default: 11.4440931
+    name: QUAD:LI27:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:301:BDES:
+    default: -11.5803004
+    name: QUAD:LI27:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:401:BDES:
+    default: 11.5814319
+    name: QUAD:LI27:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:501:BDES:
+    default: -11.9457453
+    name: QUAD:LI27:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:601:BDES:
+    default: 12.3179198
+    name: QUAD:LI27:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:701:BDES:
+    default: -12.3092212
+    name: QUAD:LI27:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:801:BDES:
+    default: 12.6503689
+    name: QUAD:LI27:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI27:901:BDES:
+    default: -12.1057787
+    name: QUAD:LI27:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:201:BDES:
+    default: 12.142468
+    name: QUAD:LI28:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:301:BDES:
+    default: -12.6255886
+    name: QUAD:LI28:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:401:BDES:
+    default: 12.2929547
+    name: QUAD:LI28:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:501:BDES:
+    default: -12.2883362
+    name: QUAD:LI28:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:601:BDES:
+    default: 12.2930112
+    name: QUAD:LI28:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:701:BDES:
+    default: -12.2883884
+    name: QUAD:LI28:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:801:BDES:
+    default: 12.6354138
+    name: QUAD:LI28:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI28:901:BDES:
+    default: -12.0976074
+    name: QUAD:LI28:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:201:BDES:
+    default: 12.3779191
+    name: QUAD:LI29:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:301:BDES:
+    default: -13.167663
+    name: QUAD:LI29:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:401:BDES:
+    default: 13.0768628
+    name: QUAD:LI29:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:501:BDES:
+    default: -13.2800184
+    name: QUAD:LI29:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:601:BDES:
+    default: 13.6007469
+    name: QUAD:LI29:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:701:BDES:
+    default: -13.9187955
+    name: QUAD:LI29:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:801:BDES:
+    default: 14.3092352
+    name: QUAD:LI29:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI29:901:BDES:
+    default: -13.7182782
+    name: QUAD:LI29:901:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI30:201:BDES:
+    default: 13.9888439
+    name: QUAD:LI30:201:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI30:301:BDES:
+    default: -14.7812615
+    name: QUAD:LI30:301:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI30:401:BDES:
+    default: 14.1814523
+    name: QUAD:LI30:401:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI30:501:BDES:
+    default: -14.9280834
+    name: QUAD:LI30:501:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI30:601:BDES:
+    default: 15.1850247
+    name: QUAD:LI30:601:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI30:701:BDES:
+    default: -15.4911992
+    name: QUAD:LI30:701:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LI30:801:BDES:
+    default: 18.8135962
+    name: QUAD:LI30:801:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:110:BDES:
+    default: -57.0677288
+    name: QUAD:LTUH:110:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:120:BDES:
+    default: 40.0101825
+    name: QUAD:LTUH:120:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:130:BDES:
+    default: -71.4080214
+    name: QUAD:LTUH:130:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:150:BDES:
+    default: 71.43086404087676
+    name: QUAD:LTUH:150:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:170:BDES:
+    default: -71.47113851831959
+    name: QUAD:LTUH:170:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:180:BDES:
+    default: 120.947022
+    name: QUAD:LTUH:180:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:190:BDES:
+    default: -115.2813577
+    name: QUAD:LTUH:190:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:250:BDES:
+    default: 51.3317643
+    name: QUAD:LTUH:250:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:285:BDES:
+    default: -71.189426
+    name: QUAD:LTUH:285:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:290:BDES:
+    default: 141.99649
+    name: QUAD:LTUH:290:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:295:BDES:
+    default: -71.26013521528927
+    name: QUAD:LTUH:295:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:350:BDES:
+    default: 51.55485539431925
+    name: QUAD:LTUH:350:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:385:BDES:
+    default: -71.21614142189138
+    name: QUAD:LTUH:385:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:390:BDES:
+    default: 142.16159859966717
+    name: QUAD:LTUH:390:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:395:BDES:
+    default: -71.1818888917017
+    name: QUAD:LTUH:395:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:440:BDES:
+    default: -2.6171005
+    name: QUAD:LTUH:440:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:450:BDES:
+    default: 51.36616832222511
+    name: QUAD:LTUH:450:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:460:BDES:
+    default: -0.8997133
+    name: QUAD:LTUH:460:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:485:BDES:
+    default: -71.20983332822587
+    name: QUAD:LTUH:485:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:490:BDES:
+    default: 141.83017016528476
+    name: QUAD:LTUH:490:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:495:BDES:
+    default: -71.19496126756641
+    name: QUAD:LTUH:495:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:550:BDES:
+    default: 50.996133203697276
+    name: QUAD:LTUH:550:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:585:BDES:
+    default: -71.1785087078918
+    name: QUAD:LTUH:585:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:590:BDES:
+    default: 141.99131842718793
+    name: QUAD:LTUH:590:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:595:BDES:
+    default: -71.24733634489021
+    name: QUAD:LTUH:595:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:620:BDES:
+    default: -56.3176189
+    name: QUAD:LTUH:620:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:640:BDES:
+    default: 59.8936283
+    name: QUAD:LTUH:640:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:660:BDES:
+    default: -67.2833688
+    name: QUAD:LTUH:660:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:665:BDES:
+    default: 1.2824409e-11
+    name: QUAD:LTUH:665:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:680:BDES:
+    default: 47.2121454
+    name: QUAD:LTUH:680:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:720:BDES:
+    default: 15.960068
+    name: QUAD:LTUH:720:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:730:BDES:
+    default: -15.938246620206698
+    name: QUAD:LTUH:730:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:740:BDES:
+    default: 15.96952088796467
+    name: QUAD:LTUH:740:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:750:BDES:
+    default: -15.975449443665905
+    name: QUAD:LTUH:750:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:760:BDES:
+    default: 15.946246857339258
+    name: QUAD:LTUH:760:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:770:BDES:
+    default: -15.932100602230374
+    name: QUAD:LTUH:770:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:820:BDES:
+    default: 30.6617302
+    name: QUAD:LTUH:820:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:840:BDES:
+    default: -26.7567282
+    name: QUAD:LTUH:840:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:860:BDES:
+    default: 17.9659174
+    name: QUAD:LTUH:860:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:LTUH:880:BDES:
+    default: -19.6278851
+    name: QUAD:LTUH:880:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:1380:BDES:
+    default: 30.0
+    name: QUAD:UNDH:1380:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:1480:BDES:
+    default: -30.0
+    name: QUAD:UNDH:1480:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:1580:BDES:
+    default: 30.0
+    name: QUAD:UNDH:1580:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:1680:BDES:
+    default: -30.0
+    name: QUAD:UNDH:1680:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:1780:BDES:
+    default: 30.0
+    name: QUAD:UNDH:1780:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:1880:BDES:
+    default: -30.0
+    name: QUAD:UNDH:1880:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:1980:BDES:
+    default: 30.0
+    name: QUAD:UNDH:1980:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2080:BDES:
+    default: -30.0
+    name: QUAD:UNDH:2080:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2180:BDES:
+    default: 30.0
+    name: QUAD:UNDH:2180:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2280:BDES:
+    default: -30.0
+    name: QUAD:UNDH:2280:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2380:BDES:
+    default: 30.0
+    name: QUAD:UNDH:2380:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2480:BDES:
+    default: -30.0
+    name: QUAD:UNDH:2480:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2580:BDES:
+    default: 30.0
+    name: QUAD:UNDH:2580:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2680:BDES:
+    default: -30.0
+    name: QUAD:UNDH:2680:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2780:BDES:
+    default: 30.0
+    name: QUAD:UNDH:2780:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2880:BDES:
+    default: -30.0
+    name: QUAD:UNDH:2880:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:2980:BDES:
+    default: 30.0
+    name: QUAD:UNDH:2980:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3080:BDES:
+    default: -30.0
+    name: QUAD:UNDH:3080:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3180:BDES:
+    default: 30.0
+    name: QUAD:UNDH:3180:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3280:BDES:
+    default: -30.0
+    name: QUAD:UNDH:3280:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3380:BDES:
+    default: 30.0
+    name: QUAD:UNDH:3380:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3480:BDES:
+    default: -30.0
+    name: QUAD:UNDH:3480:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3580:BDES:
+    default: 30.0
+    name: QUAD:UNDH:3580:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3680:BDES:
+    default: -30.0
+    name: QUAD:UNDH:3680:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3780:BDES:
+    default: 30.0
+    name: QUAD:UNDH:3780:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3880:BDES:
+    default: -30.0
+    name: QUAD:UNDH:3880:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:3980:BDES:
+    default: 30.0
+    name: QUAD:UNDH:3980:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:4080:BDES:
+    default: -30.0
+    name: QUAD:UNDH:4080:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:4180:BDES:
+    default: 30.0
+    name: QUAD:UNDH:4180:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:4280:BDES:
+    default: -30.0
+    name: QUAD:UNDH:4280:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:4380:BDES:
+    default: 30.0
+    name: QUAD:UNDH:4380:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:4480:BDES:
+    default: -30.0
+    name: QUAD:UNDH:4480:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:4580:BDES:
+    default: 30.0
+    name: QUAD:UNDH:4580:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  QUAD:UNDH:4680:BDES:
+    default: -41.0931961
+    name: QUAD:UNDH:4680:BDES
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI21:1:PHAS:
+    default: 0.1586761474609375
+    name: SBST:LI21:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI22:1:PHAS:
+    default: -0.38561248779296875
+    name: SBST:LI22:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI23:1:PHAS:
+    default: -0.07339859008789062
+    name: SBST:LI23:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI24:1:PHAS:
+    default: -0.007232666015625
+    name: SBST:LI24:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI25:1:PHAS:
+    default: -0.15909576416015625
+    name: SBST:LI25:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI26:1:PHAS:
+    default: 0.11358833312988281
+    name: SBST:LI26:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI27:1:PHAS:
+    default: 0.0
+    name: SBST:LI27:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  SBST:LI28:1:PHAS:
+    default: 0.0093841552734375
+    name: SBST:LI28:1:PHAS
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  WIRE:IN20:561:ALPHA_X:
+    default: 0.043921382394919044
+    name: WIRE:IN20:561:ALPHA_X
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  WIRE:IN20:561:ALPHA_Y:
+    default: -0.197309023358983
+    name: WIRE:IN20:561:ALPHA_Y
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  WIRE:IN20:561:BETA_X:
+    default: 0.7375145239268558
+    name: WIRE:IN20:561:BETA_X
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+  WIRE:IN20:561:BETA_Y:
+    default: 1.0283872397123066
+    name: WIRE:IN20:561:BETA_Y
+    range:
+    - -.inf
+    - .inf
+    type: scalar
+output_variables:
+  ele.a.alpha:
+    name: ele.a.alpha
+    type: array
+  ele.a.beta:
+    name: ele.a.beta
+    type: array
+  ele.a.eta:
+    name: ele.a.eta
+    type: array
+  ele.a.etap:
+    name: ele.a.etap
+    type: array
+  ele.a.gamma:
+    name: ele.a.gamma
+    type: array
+  ele.a.phi:
+    name: ele.a.phi
+    type: array
+  ele.b.alpha:
+    name: ele.b.alpha
+    type: array
+  ele.b.beta:
+    name: ele.b.beta
+    type: array
+  ele.b.eta:
+    name: ele.b.eta
+    type: array
+  ele.b.etap:
+    name: ele.b.etap
+    type: array
+  ele.b.gamma:
+    name: ele.b.gamma
+    type: array
+  ele.b.phi:
+    name: ele.b.phi
+    type: array
+  ele.e_tot:
+    name: ele.e_tot
+    type: array
+  ele.ix_branch:
+    name: ele.ix_branch
+    type: array
+  ele.ix_ele:
+    name: ele.ix_ele
+    type: array
+  ele.l:
+    name: ele.l
+    type: array
+  ele.mat6:
+    name: ele.mat6
+    type: array
+  ele.name:
+    name: ele.name
+    type: array
+  ele.p0c:
+    name: ele.p0c
+    type: array
+  ele.s:
+    name: ele.s
+    type: array
+  ele.vec0:
+    name: ele.vec0
+    type: array
+  ele.x.eta:
+    name: ele.x.eta
+    type: array
+  ele.x.etap:
+    name: ele.x.etap
+    type: array
+  ele.y.eta:
+    name: ele.y.eta
+    type: array
+  ele.y.etap:
+    name: ele.y.etap
+    type: array

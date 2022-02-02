@@ -5,16 +5,18 @@ from bokeh.plotting import figure
 from bokeh.layouts import column, row
 from bokeh.models import ColumnDataSource, Div, HoverTool
 from bokeh.io import curdoc
-from lume_model.utils import load_variables
-
+from lume_model.utils import variables_from_yaml
+from lume_epics.utils import config_from_yaml
+from lcls_cu_acc_live import EPICS_CONFIG_FILE, VARIABLE_FILE
 prefix = "DEMO"
 
-variable_filename = resource_filename(
-    "lcls_cu_acc_live.files", "model_variables.pickle"
-)
-input_variables, output_variables = load_variables(variable_filename)
+with open (VARIABLE_FILE, "r") as f:
+    input_variables, output_variables = variables_from_yaml(f)
 
-controller = Controller("ca", input_variables, output_variables, prefix)
+with open (EPICS_CONFIG_FILE, "r") as f:
+    epics_config = config_from_yaml(f)
+
+controller = Controller(epics_config)
 
 
 class TaoMonitor:
